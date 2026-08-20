@@ -394,5 +394,17 @@
   },
   "homepage.feature.billing.description": {
     "message": "Gestionează formularele de admisie, fișele pacienților, rețetele electronice, asigurările și facturarea — totul dintr-un singur panou al clinicii."
+  },
+  "navbarSearch.placeholder": {
+    "message": "Caută",
+    "description": "Navbar search bar placeholder"
+  },
+  "navbarSearch.noResults": {
+    "message": "Niciun rezultat",
+    "description": "Navbar search bar empty results message"
+  },
+  "navbarSearch.seeAll": {
+    "message": "Vezi toate rezultatele",
+    "description": "Navbar search bar link to the full search page"
   }
 }

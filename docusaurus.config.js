@@ -120,9 +120,8 @@ const config = {
             label: 'Documentation',
           },
           {
-            to: '/search',
-            position: 'left',
-            label: 'Search',
+            type: 'custom-searchBar',
+            position: 'right',
           },
           {
             type: 'localeDropdown',

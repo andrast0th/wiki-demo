@@ -4,39 +4,11 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Translate, {translate} from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
-
-// Pagefind ships built-in UI strings for several languages, but not
-// Romanian — this is passed as the `translations` option so the search
-// box, "N results for ...", "load more", etc. render in Romanian too.
-const PAGEFIND_TRANSLATIONS_RO = {
-  placeholder: 'Caută',
-  clear_search: 'Șterge',
-  load_more: 'Încarcă mai multe rezultate',
-  search_label: 'Caută pe acest site',
-  filters_label: 'Filtre',
-  zero_results: 'Niciun rezultat pentru [SEARCH_TERM]',
-  one_result: '[COUNT] rezultat pentru [SEARCH_TERM]',
-  many_results: '[COUNT] rezultate pentru [SEARCH_TERM]',
-  alt_search:
-    'Niciun rezultat pentru [SEARCH_TERM]. Se afișează rezultate pentru [DIFFERENT_TERM]',
-  search_suggestion:
-    'Niciun rezultat pentru [SEARCH_TERM]. Încearcă una dintre căutările următoare:',
-  searching: 'Se caută [SEARCH_TERM]...',
-};
-
-// Pagefind indexes the physical *.html files docusaurus build emits
-// (trailingSlash:false), and links results to that literal path — but
-// Docusaurus's own client-side router only knows the extension-less
-// route (e.g. /billing/payments-invoicing, not
-// /billing/payments-invoicing.html). Clicking a result would 404 against
-// Docusaurus's router, so results URLs are rewritten here to match.
-function toDocusaurusRoute(url) {
-  if (!url) return url;
-  const hashIndex = url.indexOf('#');
-  const hash = hashIndex === -1 ? '' : url.slice(hashIndex);
-  const path = hashIndex === -1 ? url : url.slice(0, hashIndex);
-  return path.replace(/(?:index)?\.html$/, '') + hash;
-}
+import {
+  PAGEFIND_TRANSLATIONS_RO,
+  getRootBaseUrl,
+  toDocusaurusRoute,
+} from '@site/src/utils/pagefind';
 
 function toDocusaurusResult(result) {
   if (!result) return result;
@@ -61,16 +33,11 @@ function PagefindSearch() {
   const [status, setStatus] = useState('loading');
   const {i18n, siteConfig} = useDocusaurusContext();
   const currentLocale = i18n.currentLocale;
-  // Pagefind's index/assets are built once at the site root (build/pagefind),
-  // not per-locale. useBaseUrl() and siteConfig.baseUrl both resolve to the
-  // *locale-scoped* baseUrl on non-default locales (e.g. "/wiki-demo/ro/",
-  // matching that locale's own build/ro/ output folder), which 404s against
-  // the shared, un-localized pagefind folder — so the locale segment has to
-  // be stripped back off here to get the true site-root path.
-  const rootBaseUrl =
-    currentLocale === i18n.defaultLocale
-      ? siteConfig.baseUrl
-      : siteConfig.baseUrl.replace(new RegExp(`${currentLocale}/$`), '');
+  const rootBaseUrl = getRootBaseUrl({
+    currentLocale,
+    defaultLocale: i18n.defaultLocale,
+    baseUrl: siteConfig.baseUrl,
+  });
   const pagefindCssUrl = `${rootBaseUrl}pagefind/pagefind-ui.css`;
   const pagefindJsUrl = `${rootBaseUrl}pagefind/pagefind-ui.js`;
   const pagefindBundlePath = `${rootBaseUrl}pagefind/`;
@@ -108,6 +75,27 @@ function PagefindSearch() {
           showImages: false,
           resetStyles: false,
         });
+
+        // Carry over a query typed into the always-visible navbar search
+        // bar (linked here as /search?q=...) into Pagefind's own input,
+        // which owns its search state internally — poke its value and
+        // dispatch a real "input" event so Pagefind picks it up.
+        const initialQuery = new URLSearchParams(window.location.search).get(
+          'q',
+        );
+        if (initialQuery) {
+          const input = containerRef.current?.querySelector(
+            'input.pagefind-ui__search-input',
+          );
+          if (input) {
+            const setter = Object.getOwnPropertyDescriptor(
+              window.HTMLInputElement.prototype,
+              'value',
+            ).set;
+            setter.call(input, initialQuery);
+            input.dispatchEvent(new Event('input', {bubbles: true}));
+          }
+        }
 
         setStatus('ready');
       } catch (err) {
