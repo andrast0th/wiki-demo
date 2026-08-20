@@ -26,9 +26,9 @@ const config = {
   // name of the repo you push this project to, then everything (site url,
   // links, `npm run deploy`) lines up automatically.
   // ---------------------------------------------------------------------
-  url: 'https://your-github-username.github.io',
+  url: 'https://andrast0th.github.io',
   baseUrl: '/wiki-demo/',
-  organizationName: 'your-github-username', // Your GitHub org/user name.
+  organizationName: 'andrast0th', // Your GitHub org/user name.
   projectName: 'wiki-demo', // Your GitHub repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
@@ -52,7 +52,7 @@ const config = {
           routeBasePath: '/', // Serve docs at the site root, wiki-style.
           sidebarPath: './sidebars.js',
           editUrl:
-            'https://github.com/your-github-username/wiki-demo/tree/main/',
+            'https://github.com/andrast0th/wiki-demo/tree/main/',
         },
         blog: false,
         theme: {
@@ -87,7 +87,7 @@ const config = {
             label: 'Search',
           },
           {
-            href: 'https://github.com/your-github-username/wiki-demo',
+            href: 'https://github.com/andrast0th/wiki-demo',
             label: 'GitHub',
             position: 'right',
           },
@@ -110,7 +110,7 @@ const config = {
               {label: 'Search', to: '/search'},
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-github-username/wiki-demo',
+                href: 'https://github.com/andrast0th/wiki-demo',
               },
             ],
           },
