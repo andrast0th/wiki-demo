@@ -24,6 +24,32 @@ const PAGEFIND_TRANSLATIONS_RO = {
   searching: 'Se caută [SEARCH_TERM]...',
 };
 
+// Pagefind indexes the physical *.html files docusaurus build emits
+// (trailingSlash:false), and links results to that literal path — but
+// Docusaurus's own client-side router only knows the extension-less
+// route (e.g. /billing/payments-invoicing, not
+// /billing/payments-invoicing.html). Clicking a result would 404 against
+// Docusaurus's router, so results URLs are rewritten here to match.
+function toDocusaurusRoute(url) {
+  if (!url) return url;
+  const hashIndex = url.indexOf('#');
+  const hash = hashIndex === -1 ? '' : url.slice(hashIndex);
+  const path = hashIndex === -1 ? url : url.slice(0, hashIndex);
+  return path.replace(/(?:index)?\.html$/, '') + hash;
+}
+
+function toDocusaurusResult(result) {
+  if (!result) return result;
+  return {
+    ...result,
+    url: toDocusaurusRoute(result.url),
+    sub_results: result.sub_results?.map((sub) => ({
+      ...sub,
+      url: toDocusaurusRoute(sub.url),
+    })),
+  };
+}
+
 /**
  * Pagefind only produces /pagefind/* assets during `docusaurus build`
  * (via the `postbuild` script) — there is nothing to load in `npm start`.
@@ -77,6 +103,7 @@ function PagefindSearch() {
           language: currentLocale,
           translations:
             currentLocale === 'ro' ? PAGEFIND_TRANSLATIONS_RO : undefined,
+          processResult: toDocusaurusResult,
           showSubResults: true,
           showImages: false,
           resetStyles: false,
