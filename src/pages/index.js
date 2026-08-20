@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Translate, {translate} from '@docusaurus/Translate';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Starfield from '@site/src/components/Starfield';
@@ -8,37 +8,66 @@ import Starfield from '@site/src/components/Starfield';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-const STATS = [
-  {value: '7', label: 'Doc sections'},
-  {value: '21', label: 'Guides & FAQs'},
-  {value: '100%', label: 'Client-side search'},
-];
+function useStats() {
+  return [
+    {
+      value: '7',
+      label: translate({
+        id: 'homepage.stats.sections',
+        message: 'Doc sections',
+      }),
+    },
+    {
+      value: '21',
+      label: translate({
+        id: 'homepage.stats.guides',
+        message: 'Guides & FAQs',
+      }),
+    },
+    {
+      value: '100%',
+      label: translate({
+        id: 'homepage.stats.search',
+        message: 'Client-side search',
+      }),
+    },
+  ];
+}
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const stats = useStats();
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <Starfield />
       <div className={clsx('container', styles.heroInner)}>
         <div className={styles.badge}>
           <span className={styles.badgeDot} />
-          UNOFFICIAL DEMO WIKI
+          <Translate id="homepage.badge">UNOFFICIAL DEMO WIKI</Translate>
         </div>
         <Heading as="h1" className={styles.title}>
           <span>SuperMed</span>
-          <span className={styles.titleGradient}>Help Center</span>
+          <span className={styles.titleGradient}>
+            <Translate id="homepage.title.helpCenter">Help Center</Translate>
+          </span>
         </Heading>
-        <p className={styles.subtitle}>{siteConfig.tagline}</p>
+        <p className={styles.subtitle}>
+          <Translate id="homepage.subtitle">
+            Documentation and FAQs for running your clinic on SuperMed
+          </Translate>
+        </p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/intro">
-            Browse the Docs
+            <Translate id="homepage.cta.browseDocs">
+              Browse the Docs
+            </Translate>
           </Link>
           <Link className={styles.arrowLink} to="/search">
-            Search the docs <span aria-hidden="true">→</span>
+            <Translate id="homepage.cta.search">Search the docs</Translate>{' '}
+            <span aria-hidden="true">→</span>
           </Link>
         </div>
         <div className={styles.stats}>
-          {STATS.map((stat, idx) => (
+          {stats.map((stat, idx) => (
             <div key={stat.label} className={styles.statItem}>
               {idx > 0 && <span className={styles.statDivider} />}
               <div>
@@ -54,10 +83,14 @@ function HomepageHeader() {
 }
 
 export default function Home() {
+  const title = translate({id: 'homepage.meta.title', message: 'Home'});
+  const description = translate({
+    id: 'homepage.meta.description',
+    message:
+      'Documentation and FAQs for clinics running video consultations on SuperMed.',
+  });
   return (
-    <Layout
-      title="Home"
-      description="Documentation and FAQs for clinics running video consultations on SuperMed.">
+    <Layout title={title} description={description}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Centrul de Asistență SuperMed",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Sigla SuperMed",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "Documentație",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Search": {
+    "message": "Căutare",
+    "description": "Navbar item with label Search"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

@@ -32,6 +32,14 @@ npm run build
 npm run serve
 ```
 
+## Languages (i18n)
+
+The site is bilingual — English (default, served at `/`) and Romanian (served at `/ro/`), with a locale switcher in the navbar. `npm run build` builds both locales automatically (no extra flags needed); Pagefind then indexes both, auto-detects the two languages from each page's `lang` attribute, and the search page filters results to the current locale automatically.
+
+- Doc content translations live in [`i18n/ro/docusaurus-plugin-content-docs/current/`](./i18n/ro/docusaurus-plugin-content-docs/current/), mirroring the `docs/` folder structure file-for-file.
+- UI strings (navbar, footer, theme, the homepage/search page) live in [`i18n/ro/code.json`](./i18n/ro/code.json), [`i18n/ro/docusaurus-theme-classic/`](./i18n/ro/docusaurus-theme-classic/), and [`i18n/ro/docusaurus-plugin-content-docs/current.json`](./i18n/ro/docusaurus-plugin-content-docs/current.json) (the last one holds sidebar category labels).
+- Adding a new doc page in English and want it in Romanian too? Run `npm run write-translations -- --locale ro` to pick up any new translatable strings (it won't overwrite existing translations), then add the matching file under `i18n/ro/docusaurus-plugin-content-docs/current/`. Headings that other pages link to by anchor (e.g. `#roles-overview`) need an explicit `\{#same-id}` suffix in the Romanian heading too, so the anchor stays stable even though the heading text is translated.
+
 ## Deploying to GitHub Pages
 
 `docusaurus.config.js` is already pointed at `andrast0th/wiki-demo` (`url`, `baseUrl`, `organizationName`, `projectName`, and the GitHub links). If you fork this to a different account/repo, update those values first.

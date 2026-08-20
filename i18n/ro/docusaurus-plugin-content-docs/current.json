@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "Curent",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Getting Started": {
+    "message": "Primii pași",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Getting Started.link.generated-index.description": {
+    "message": "Configurează-ți clinica, invită-ți echipa și pregătește-ți contul înainte de prima consultație pe SuperMed.",
+    "description": "The generated-index page description for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Video Consultations": {
+    "message": "Consultații video",
+    "description": "The label for category 'Video Consultations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Video Consultations.link.generated-index.description": {
+    "message": "Configurează dispozitivele, sala de așteptare și setările pentru consultații video securizate cu pacienții.",
+    "description": "The generated-index page description for category 'Video Consultations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Scheduling": {
+    "message": "Programări",
+    "description": "The label for category 'Scheduling' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Scheduling.link.generated-index.description": {
+    "message": "Configurează disponibilitatea medicului, tipurile de programări și auto-programarea pacienților.",
+    "description": "The generated-index page description for category 'Scheduling' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Patient Management": {
+    "message": "Gestionarea pacienților",
+    "description": "The label for category 'Patient Management' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Patient Management.link.generated-index.description": {
+    "message": "Formulare de admisie, fișe de pacient și rețete electronice.",
+    "description": "The generated-index page description for category 'Patient Management' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Billing": {
+    "message": "Facturare",
+    "description": "The label for category 'Billing' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Billing.link.generated-index.description": {
+    "message": "Configurarea asigurărilor, plăți și facturare.",
+    "description": "The generated-index page description for category 'Billing' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Security & Compliance": {
+    "message": "Securitate și conformitate",
+    "description": "The label for category 'Security & Compliance' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Security & Compliance.link.generated-index.description": {
+    "message": "Cum protejează SuperMed datele pacienților și ce implică asta pentru configurarea clinicii tale.",
+    "description": "The generated-index page description for category 'Security & Compliance' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.FAQ": {
+    "message": "Întrebări frecvente",
+    "description": "The label for category 'FAQ' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.FAQ.link.generated-index.description": {
+    "message": "Răspunsuri rapide la întrebările frecvente despre SuperMed.",
+    "description": "The generated-index page description for category 'FAQ' in sidebar 'docsSidebar'"
+  }
+}

@@ -65,7 +65,17 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ro'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        htmlLang: 'en',
+      },
+      ro: {
+        label: 'Română',
+        htmlLang: 'ro',
+      },
+    },
   },
 
   presets: [
@@ -114,6 +124,10 @@ const config = {
             label: 'Search',
           },
           {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/andrast0th/wiki-demo',
             label: 'GitHub',
             position: 'right',
@@ -142,7 +156,8 @@ const config = {
             ],
           },
         ],
-        copyright: `Unofficial documentation, built as a demo with Docusaurus + Pagefind — not affiliated with or endorsed by SuperMed. © ${new Date().getFullYear()}`,
+        copyright:
+          'Unofficial documentation, built as a demo with Docusaurus + Pagefind — not affiliated with or endorsed by SuperMed.',
       },
       prism: {
         theme: prismThemes.github,
