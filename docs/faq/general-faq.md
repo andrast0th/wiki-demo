@@ -2,36 +2,36 @@
 sidebar_position: 1
 ---
 
-# General FAQ
+# Întrebări frecvente generale
 
-### How long does it take to get set up?
+### Cât durează configurarea?
 
-Most solo practices are fully configured — account, clinic profile, staff, video settings, and a first booking link — within a single afternoon. See [Getting Started](/getting-started/account-setup) for the full walkthrough. Identity verification can take a few hours, and e-prescribing/EPCS approval (if needed) takes longer — see [E-Prescriptions](/patient-management/e-prescriptions#enabling-e-prescribing).
+Majoritatea cabinetelor individuale sunt complet configurate — cont, profilul clinicii, personal, setări video și un prim link de rezervare — într-o singură după-amiază. Vezi [Primii pași](/getting-started/account-setup) pentru ghidul complet. Verificarea identității poate dura câteva ore, iar aprobarea pentru prescriere electronică/EPCS (dacă este necesară) durează mai mult — vezi [Rețete electronice](/patient-management/e-prescriptions#enabling-e-prescribing).
 
-### Can I use SuperMed on a tablet or phone?
+### Pot folosi DemoMed pe tabletă sau telefon?
 
-Yes. Providers can run visits from an iPad or Android tablet using the Chrome or Safari browser (no separate app required), though a laptop or desktop is recommended for visits where you'll be taking detailed clinical notes or screen-sharing. Patients can join from any modern smartphone browser.
+Da. Medicii pot susține vizite de pe un iPad sau o tabletă Android, folosind browserul Chrome sau Safari (fără nicio aplicație separată), deși un laptop sau un desktop este recomandat pentru vizitele în care iei note clinice detaliate sau partajezi ecranul. Pacienții se pot alătura din browserul oricărui smartphone modern.
 
-### Do patients need to create an account?
+### Pacienții trebuie să își creeze un cont?
 
-No. Patients can join a visit and view/pay invoices via secure emailed links without creating a SuperMed account. Creating a free patient portal account is optional and adds the ability to view full visit history, message the clinic, and manage their own appointments.
+Nu. Pacienții se pot alătura unei vizite și pot vedea/plăti facturi prin linkuri securizate primite pe email, fără să creeze un cont DemoMed. Crearea unui cont gratuit în portalul de pacient este opțională și adaugă posibilitatea de a vedea întregul istoric al vizitelor, de a trimite mesaje clinicii și de a-și gestiona singuri programările.
 
-### Can I see patients who are located in a different state? \{#cross-state}
+### Pot avea pacienți aflați într-o altă regiune? \{#cross-state}
 
-Only if you're licensed in the state the patient is physically located in **at the time of the visit** — not the state where your clinic is registered. SuperMed requires confirming the patient's current state at check-in and will block the visit (or at least prescribing — see [E-Prescriptions](/patient-management/e-prescriptions#prescribing-across-state-lines)) if it doesn't match a state you've added a license for under **Settings → Prescribing**. Some states participate in interstate licensure compacts that can simplify this — check your state medical board for current rules, as SuperMed doesn't grant licensure itself.
+Doar dacă ești licențiat în regiunea în care se află fizic pacientul **în momentul vizitei** — nu regiunea în care este înregistrată clinica ta. DemoMed cere confirmarea regiunii curente a pacientului la check-in și va bloca vizita (sau cel puțin prescrierea — vezi [Rețete electronice](/patient-management/e-prescriptions#prescribing-across-state-lines)) dacă aceasta nu corespunde unei regiuni pentru care ai adăugat o licență în **Setări → Prescriere**. Unele regiuni participă la acorduri de recunoaștere reciprocă a licențierii, care pot simplifica acest proces — verifică regulile curente la colegiul medicilor din regiunea ta, deoarece DemoMed nu acordă el însuși licențierea.
 
-### What happens if my internet goes down during a visit?
+### Ce se întâmplă dacă îmi cade internetul în timpul unei vizite?
 
-The visit room stays open for 30 minutes after a disconnect, so simply reconnecting and reopening the same visit link resumes the call. If you can't reconnect in time, SuperMed shows the patient a message with your clinic's phone number as a fallback (pulled from your [clinic profile](/getting-started/clinic-profile)) so they aren't left without a way to reach you.
+Sala vizitei rămâne deschisă timp de 30 de minute după o deconectare, așa că simpla reconectare și redeschidere a aceluiași link de vizită reia apelul. Dacă nu te poți reconecta la timp, DemoMed afișează pacientului un mesaj cu numărul de telefon al clinicii tale, ca variantă de rezervă (preluat din [profilul clinicii](/getting-started/clinic-profile)), astfel încât acesta să aibă mereu o modalitate de a te contacta.
 
-### Can I run group visits (e.g. a diabetes education class)?
+### Pot organiza vizite de grup (de ex. un curs de educație pentru diabet)?
 
-Yes, on the Practice plan and above. Create a **Group Visit** appointment type under **Schedule → Appointment Types → New → Group Visit**, set a maximum participant count, and patients booking that slot join the same room rather than getting individual one-on-one rooms.
+Da, începând cu planul Practice. Creează un tip de programare **Vizită de grup** din **Agendă → Tipuri de programări → Nou → Vizită de grup**, setează un număr maxim de participanți, iar pacienții care fac o programare în acel interval se alătură aceleiași săli, în loc să primească săli individuale unu-la-unu.
 
-### Is there a mobile app?
+### Există o aplicație mobilă?
 
-Not currently — SuperMed is fully browser-based for both providers and patients, which avoids app-store approval delays for updates and works identically across devices. A dedicated app is on the public roadmap; there's no committed release date yet.
+Nu momentan — DemoMed este complet bazat pe browser, atât pentru medici, cât și pentru pacienți, ceea ce evită întârzierile de aprobare din magazinele de aplicații pentru actualizări și funcționează identic pe toate dispozitivele. O aplicație dedicată se află pe foaia de parcurs publică; nu există încă o dată de lansare confirmată.
 
-### How do I cancel or downgrade my plan?
+### Cum îmi anulez sau retrogradez planul?
 
-From **Settings → Billing → Plan**, click **Change Plan**. Downgrades take effect at the start of your next billing cycle; if you're over the new plan's provider or usage limits at that point, you'll be prompted to resolve that (e.g. deactivate a provider seat) before the downgrade applies.
+Din **Setări → Facturare → Plan**, apasă **Schimbă planul**. Retrogradările intră în vigoare la începutul următorului ciclu de facturare; dacă la acel moment depășești limitele de medici sau de utilizare ale noului plan, vei fi rugat să rezolvi acest lucru (de ex. dezactivând un loc de medic) înainte ca retrogradarea să se aplice.

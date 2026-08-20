@@ -2,46 +2,46 @@
 sidebar_position: 1
 ---
 
-# Video & Audio Device Setup
+# Configurarea dispozitivelor video și audio
 
-SuperMed video visits run directly in the browser (Chrome, Edge, Safari 16+, or Firefox) using WebRTC — no separate app install is required for providers or patients.
+Vizitele video DemoMed rulează direct în browser (Chrome, Edge, Safari 16+ sau Firefox) folosind WebRTC — nu este nevoie de nicio aplicație separată, nici pentru medici, nici pentru pacienți.
 
-## Recommended equipment
+## Echipament recomandat
 
-| Component | Minimum | Recommended |
+| Componentă | Minim | Recomandat |
 |---|---|---|
-| Camera | Built-in laptop webcam (720p) | External 1080p webcam at eye level |
-| Microphone | Built-in laptop mic | USB headset or dedicated microphone (reduces echo and background noise) |
-| Internet | 3 Mbps up/down | 10+ Mbps up/down, wired connection preferred over Wi-Fi |
-| Browser | Chrome 100+, Safari 16+ | Latest stable Chrome or Edge |
+| Cameră | Cameră web integrată în laptop (720p) | Cameră web externă 1080p, la nivelul ochilor |
+| Microfon | Microfon integrat în laptop | Căști USB sau microfon dedicat (reduce ecoul și zgomotul de fundal) |
+| Internet | 3 Mbps upload/download | 10+ Mbps upload/download, conexiune prin cablu preferabilă în locul Wi-Fi |
+| Browser | Chrome 100+, Safari 16+ | Cea mai recentă versiune stabilă de Chrome sau Edge |
 
-## Running the device check
+## Rularea verificării dispozitivelor
 
-Before your first consultation, run SuperMed's built-in device check:
+Înainte de prima ta consultație, rulează verificarea încorporată a dispozitivelor din DemoMed:
 
-1. From the dashboard, go to **Settings → Video → Device Check**.
-2. Grant camera and microphone permissions when your browser prompts you. If you accidentally deny permission, see [Camera/microphone permission was denied](/faq/technical-faq#permission-denied).
-3. The check reports your measured upload/download speed, camera resolution, and mic input level, and flags anything below the recommended threshold.
+1. Din panoul de control, accesează **Setări → Video → Verificare dispozitive**.
+2. Acordă permisiunile de cameră și microfon atunci când browserul îți cere. Dacă refuzi din greșeală permisiunea, vezi [Permisiunea pentru cameră/microfon a fost refuzată](/faq/technical-faq#permission-denied).
+3. Verificarea raportează viteza măsurată de upload/download, rezoluția camerei și nivelul de intrare al microfonului, și semnalează tot ce este sub pragul recomandat.
 
-Dr. Osei runs the check from her exam room laptop and gets a warning that her upload speed (2.1 Mbps) is below the 3 Mbps minimum — she switches from Wi-Fi to a wired ethernet connection and re-runs the check, which now passes.
+Dr. Osei rulează verificarea de pe laptopul din cabinetul de consultații și primește un avertisment că viteza ei de upload (2,1 Mbps) este sub minimul de 3 Mbps — trece de la Wi-Fi la o conexiune prin cablu Ethernet și rulează din nou verificarea, care de această dată trece cu succes.
 
-## Choosing default devices
+## Alegerea dispozitivelor implicite
 
-Set default camera, microphone, and speaker under **Settings → Video → Default Devices**. This is especially useful if you use different equipment at different locations (e.g. a laptop mic at home, a USB headset at the office) — SuperMed will remember the last device you selected per browser profile, but setting explicit defaults avoids accidentally starting a visit on the wrong microphone.
+Setează camera, microfonul și difuzorul implicite din **Setări → Video → Dispozitive implicite**. Acest lucru este util mai ales dacă folosești echipamente diferite în locații diferite (de ex. microfonul laptopului acasă, căști USB la cabinet) — DemoMed reține ultimul dispozitiv selectat per profil de browser, dar setarea explicită a dispozitivelor implicite evită pornirea accidentală a unei vizite cu microfonul greșit.
 
-## Virtual backgrounds and blur
+## Fundaluri virtuale și estompare
 
-Under **Settings → Video → Appearance**, providers can enable:
+Din **Setări → Video → Aspect**, medicii pot activa:
 
-- **Background blur** — blurs everything behind the provider, useful for home offices.
-- **Virtual backgrounds** — upload a clinic-branded background image (max 5 MB, 16:9 recommended).
+- **Estomparea fundalului** — estompează tot ce se află în spatele medicului, util pentru birourile de acasă.
+- **Fundaluri virtuale** — încarcă o imagine de fundal cu identitatea vizuală a clinicii (maximum 5 MB, se recomandă 16:9).
 
-Virtual backgrounds are disabled by default for patients to avoid distracting or inappropriate backgrounds during clinical visits, but can be enabled per-clinic under **Settings → Video → Patient Options** if desired.
+Fundalurile virtuale sunt dezactivate implicit pentru pacienți, pentru a evita fundaluri care distrag atenția sau sunt nepotrivite în timpul vizitelor clinice, dar pot fi activate per clinică din **Setări → Video → Opțiuni pacienți**, dacă se dorește.
 
-## Bandwidth-saving mode
+## Modul de economisire a lățimii de bandă
 
-If a patient or provider has an unstable connection, either party can toggle **Low Bandwidth Mode** from the in-call settings menu. This caps video to 360p and prioritizes audio quality, which usually resolves choppy or freezing video — see [My video keeps freezing or dropping mid-visit](/faq/technical-faq#choppy-video) for more troubleshooting steps.
+Dacă un pacient sau un medic are o conexiune instabilă, oricare dintre părți poate activa **Modul de lățime de bandă redusă** din meniul de setări al apelului. Acesta limitează video-ul la 360p și prioritizează calitatea audio, ceea ce de obicei rezolvă problemele de imagine sacadată sau înghețată — vezi [Imaginea video îmi îngheață sau se întrerupe în timpul vizitei](/faq/technical-faq#choppy-video) pentru mai mulți pași de depanare.
 
-## Next steps
+## Pașii următori
 
-Continue to [Configuring the Waiting Room](/video-consultations/waiting-room) to control what patients experience before you join.
+Continuă cu [Configurarea sălii de așteptare](/video-consultations/waiting-room) pentru a controla ce experimentează pacienții înainte să te alături.

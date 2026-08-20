@@ -2,49 +2,49 @@
 sidebar_position: 1
 ---
 
-# Setting Your Availability
+# Setarea disponibilității tale
 
-Availability determines the time slots patients can select when booking a video visit. It's configured per-provider, so each physician in a multi-provider clinic manages their own.
+Disponibilitatea determină intervalele orare pe care pacienții le pot selecta atunci când fac o programare pentru o vizită video. Este configurată per medic, astfel încât fiecare doctor dintr-o clinică cu mai mulți medici își gestionează propria disponibilitate.
 
-## Setting a weekly schedule
+## Setarea unui program săptămânal
 
-Go to **Schedule → Availability** and define recurring weekly hours, for example:
+Accesează **Agendă → Disponibilitate** și definește ore recurente săptămânale, de exemplu:
 
 ```
-Monday      9:00 AM – 12:00 PM, 1:00 PM – 4:30 PM
-Tuesday     9:00 AM – 4:30 PM
-Wednesday   Off
-Thursday    9:00 AM – 4:30 PM
-Friday      9:00 AM – 1:00 PM
+Luni        9:00 – 12:00, 13:00 – 16:30
+Marți       9:00 – 16:30
+Miercuri    Liber
+Joi         9:00 – 16:30
+Vineri      9:00 – 13:00
 ```
 
-Dr. Osei blocks out Wednesdays entirely for administrative work and chart review, and shortens Friday to a half-day.
+Dr. Osei blochează complet ziua de miercuri pentru muncă administrativă și revizuirea fișelor, iar vinerea o scurtează la jumătate de zi.
 
-## Buffer time between visits
+## Timp tampon între vizite
 
-Under **Schedule → Availability → Buffers**, set a buffer (default 5 minutes, up to 30) automatically inserted after each appointment. This time is not bookable by patients and gives providers a moment to finish notes before the next visit starts.
+Din **Agendă → Disponibilitate → Timpi tampon**, setează un interval tampon (implicit 5 minute, până la 30) inserat automat după fiecare programare. Acest interval nu poate fi rezervat de pacienți și îi oferă medicului un moment pentru a finaliza notele înainte de începerea următoarei vizite.
 
-## Appointment slot length
+## Durata intervalelor de programare
 
-Slot length is set per **appointment type** (see [Appointment Types](/scheduling/appointment-types)) rather than globally — a "New Patient" visit might default to 45 minutes while a "Follow-up" is 20 minutes, and both can be offered within the same availability window.
+Durata unui interval se stabilește per **tip de programare** (vezi [Tipuri de programări](/scheduling/appointment-types)), nu global — o vizită „Pacient nou” poate avea implicit 45 de minute, în timp ce o vizită „Control” are 20 de minute, iar ambele pot fi oferite în aceeași fereastră de disponibilitate.
 
-## Blocking time off
+## Blocarea unor perioade libere
 
-For one-off exceptions — vacation, a conference, a half-day out sick — use **Schedule → Time Off** rather than editing your recurring weekly hours. Time off:
+Pentru excepții punctuale — concediu, o conferință, o jumătate de zi de concediu medical — folosește **Agendă → Timp liber**, nu editarea orelor recurente săptămânale. Timpul liber:
 
-- Immediately removes those slots from the patient booking page.
-- Optionally auto-cancels and notifies patients who already had appointments booked in that window (you'll be prompted to choose per block).
-- Can be set as a one-time range or a recurring pattern (e.g. "first Monday of every month").
+- Elimină imediat acele intervale din pagina de rezervare a pacienților.
+- Poate anula automat și notifica pacienții care aveau deja programări în acel interval (vei fi întrebat pentru fiecare bloc în parte).
+- Poate fi setat ca interval unic sau ca model recurent (de ex. „prima zi de luni din fiecare lună”).
 
-## Multi-provider clinics: shared vs. individual booking links
+## Clinici cu mai mulți medici: linkuri de rezervare partajate vs. individuale
 
-In clinics with more than one provider, **Settings → Team** lets you decide whether patients book:
+În clinicile cu mai mult de un medic, **Setări → Echipă** îți permite să decizi dacă pacienții fac programări:
 
-- **Directly with a specific provider** (via that provider's individual booking link), or
-- **With "next available provider"** using a shared clinic booking link, where SuperMed assigns the earliest matching slot across all providers who offer that appointment type.
+- **Direct cu un anumit medic** (prin linkul individual de rezervare al acelui medic), sau
+- **Cu „primul medic disponibil”**, folosind un link de rezervare comun al clinicii, în care DemoMed alocă cel mai apropiat interval disponibil dintre toți medicii care oferă acel tip de programare.
 
-Riverside Family Health, being a solo practice, uses only the individual provider link — see [Patient Booking Links](/scheduling/patient-booking-links) for how to share it.
+Riverside Family Health, fiind un cabinet individual, folosește doar linkul individual al medicului — vezi [Linkuri de rezervare pentru pacienți](/scheduling/patient-booking-links) pentru cum îl poți distribui.
 
-## Time zone handling
+## Gestionarea fusului orar
 
-Availability is stored in the time zone set on your [clinic profile](/getting-started/clinic-profile), but the patient booking page automatically converts displayed times to the visitor's local browser time zone, with the clinic's time zone shown in parentheses as a reference (e.g. "2:00 PM (3:00 PM ET)").
+Disponibilitatea este stocată în fusul orar setat în [profilul clinicii](/getting-started/clinic-profile), dar pagina de rezervare a pacienților convertește automat orele afișate în fusul orar local al browserului vizitatorului, cu fusul orar al clinicii afișat între paranteze ca referință (de ex. „14:00 (15:00 ora clinicii)”).

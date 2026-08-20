@@ -1,8 +1,8 @@
 {
-  "label": "Video Consultations",
+  "label": "Consultații video",
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Configure devices, waiting rooms, and settings for secure video visits with patients."
+    "description": "Configurează dispozitivele, sala de așteptare și setările pentru consultații video securizate cu pacienții."
   }
 }

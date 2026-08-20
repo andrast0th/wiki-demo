@@ -1,0 +1,8 @@
+{
+  "label": "Video Consultations",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Configure devices, waiting rooms, and settings for secure video visits with patients."
+  }
+}

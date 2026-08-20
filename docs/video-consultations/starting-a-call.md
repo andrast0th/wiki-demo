@@ -2,48 +2,48 @@
 sidebar_position: 3
 ---
 
-# Starting a Consultation
+# Începerea unei consultații
 
-## From the provider dashboard
+## Din panoul medicului
 
-1. Go to **Today's Schedule** on your SuperMed dashboard.
-2. Find the appointment and click **Start Visit**. This becomes clickable 15 minutes before the scheduled time.
-3. If the waiting room is enabled (see [Configuring the Waiting Room](/video-consultations/waiting-room)), verify the patient's stated name and date of birth, then click **Admit**.
-4. The visit opens in a new tab with video, audio, chat, and screen-share controls.
+1. Accesează **Agenda de azi** din panoul tău DemoMed.
+2. Găsește programarea și apasă **Începe vizita**. Aceasta devine activă cu 15 minute înainte de ora programată.
+3. Dacă sala de așteptare este activată (vezi [Configurarea sălii de așteptare](/video-consultations/waiting-room)), verifică numele și data nașterii declarate de pacient, apoi apasă **Admite**.
+4. Vizita se deschide într-o filă nouă, cu controale pentru video, audio, chat și partajare ecran.
 
-## In-visit tools
+## Instrumente disponibile în timpul vizitei
 
-| Tool | What it does |
+| Instrument | Ce face |
 |---|---|
-| **Chat** | Text sidebar for sharing links or instructions during the call; saved to the visit record for 90 days |
-| **Screen share** | Share your screen (e.g. to walk through lab results) or invite the patient to share theirs |
-| **Clinical notes** | Collapsible panel to jot notes during the visit, auto-saved every 30 seconds, linked to the patient's chart |
-| **Invite participant** | Add a second provider, interpreter, or family member via a one-time link |
-| **Screenshot capture** | With patient consent, capture a still frame (e.g. of a visible rash) directly into the chart |
+| **Chat** | Panou lateral de text pentru partajarea linkurilor sau instrucțiunilor în timpul apelului; salvat în fișa vizitei timp de 90 de zile |
+| **Partajare ecran** | Partajează-ți ecranul (de ex. pentru a parcurge rezultate de laborator) sau invită pacientul să și-l partajeze pe al lui |
+| **Note clinice** | Panou pliabil pentru notițe în timpul vizitei, salvat automat la fiecare 30 de secunde, legat de fișa pacientului |
+| **Invită participant** | Adaugă un al doilea medic, un interpret sau un membru al familiei printr-un link de unică folosință |
+| **Captură de ecran** | Cu acordul pacientului, capturează un cadru static (de ex. al unei erupții vizibile) direct în fișă |
 
-## Adding an interpreter or family member
+## Adăugarea unui interpret sau a unui membru al familiei
 
-Click **Invite Participant** during a live visit and choose:
+Apasă **Invită participant** în timpul unei vizite active și alege:
 
-- **Interpreter** — joins audio-only by default, with access to chat but not screen share.
-- **Family member / caregiver** — full audio/video access, shown in the participant list with a "Guest" label so it's clear to the provider they're not the patient.
+- **Interpret** — se alătură implicit doar cu audio, cu acces la chat dar nu și la partajarea ecranului.
+- **Membru al familiei / îngrijitor** — acces complet audio/video, afișat în lista de participanți cu eticheta „Invitat”, astfel încât medicul să știe clar că nu este pacientul.
 
-Invited participants receive a unique link by SMS or can be shown a QR code on screen — useful when the family member is in the room but on a different device.
+Participanții invitați primesc un link unic prin SMS sau li se poate afișa un cod QR pe ecran — util atunci când membrul familiei se află în cameră, dar pe alt dispozitiv.
 
-## Recording a visit
+## Înregistrarea unei vizite
 
-Recording requires **verbal or written consent**, which SuperMed prompts for automatically — see [Recording & Consent](/video-consultations/recording-consent) for the full policy and how to configure it.
+Înregistrarea necesită **consimțământ verbal sau scris**, pe care DemoMed îl solicită automat — vezi [Înregistrare și consimțământ](/video-consultations/recording-consent) pentru politica completă și modul de configurare.
 
-## Ending a visit
+## Încheierea unei vizite
 
-Click **End Visit** to close the call for both parties. You'll be prompted to:
+Apasă **Încheie vizita** pentru a închide apelul pentru ambele părți. Vei fi rugat să:
 
-1. Confirm or finalize clinical notes.
-2. Optionally trigger a post-visit patient survey.
-3. Optionally schedule a follow-up appointment directly from the end-of-visit screen.
+1. Confirmi sau finalizezi notele clinice.
+2. Declanșezi opțional un chestionar pentru pacient după vizită.
+3. Programezi opțional o vizită de urmărire direct din ecranul de final al vizitei.
 
-Ending the visit does **not** submit clinical notes as final — notes remain editable in draft state from the patient chart until you explicitly click **Sign & Lock** on the chart page, at which point they become part of the permanent record (see [Patient Records](/patient-management/patient-records)).
+Încheierea vizitei **nu** trimite notele clinice ca fiind finale — notele rămân editabile, în stare de ciornă, din fișa pacientului, până apeși explicit **Semnează și blochează** pe pagina fișei, moment în care devin parte din înregistrarea permanentă (vezi [Fișele pacienților](/patient-management/patient-records)).
 
-## If a call drops mid-visit
+## Dacă apelul se întrerupe în timpul vizitei
 
-Either party can simply reopen the original visit link to rejoin — SuperMed rooms stay open for 30 minutes after the last participant disconnects. See [My video keeps freezing or dropping mid-visit](/faq/technical-faq#choppy-video) if drops happen repeatedly.
+Oricare dintre părți poate pur și simplu redeschide linkul original al vizitei pentru a se reconecta — sălile DemoMed rămân deschise timp de 30 de minute după ce ultimul participant s-a deconectat. Vezi [Imaginea video îmi îngheață sau se întrerupe în timpul vizitei](/faq/technical-faq#choppy-video) dacă întreruperile se repetă.

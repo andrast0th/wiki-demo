@@ -2,39 +2,39 @@
 sidebar_position: 3
 ---
 
-# Inviting Staff & Setting Roles
+# Invitarea personalului și setarea rolurilor
 
-Even a solo practice usually needs at least one additional login — for a medical assistant, front-desk coordinator, or billing contact. SuperMed uses role-based access so staff only see what they need.
+Chiar și un cabinet individual are de obicei nevoie de cel puțin un cont suplimentar — pentru un asistent medical, un coordonator de recepție sau o persoană de contact pentru facturare. DemoMed folosește acces bazat pe roluri, astfel încât personalul vede doar ce are nevoie.
 
-## Roles overview
+## Prezentarea rolurilor \{#roles-overview}
 
-| Role | Can do | Cannot do |
+| Rol | Poate face | Nu poate face |
 |---|---|---|
-| **Owner** | Everything, including billing and closing the account | — |
-| **Provider** | Run video visits, view/edit charts for their own patients, manage their own availability | View other providers' patient records (unless explicitly shared), change clinic billing settings |
-| **Front Desk** | Schedule/reschedule appointments, send intake forms, view appointment status | Join video visits, view clinical notes, access billing reports |
-| **Billing** | View and manage invoices, insurance configuration, payment reports | Schedule appointments, view clinical notes |
-| **Read-only Auditor** | View activity logs and reports | Change any settings, view PHI |
+| **Proprietar (Owner)** | Orice, inclusiv facturarea și închiderea contului | — |
+| **Medic (Provider)** | Susține vizite video, vede/editează fișele propriilor pacienți, își gestionează propria disponibilitate | Vede fișele pacienților altor medici (dacă nu sunt partajate explicit), schimbă setările de facturare ale clinicii |
+| **Recepție (Front Desk)** | Programează/reprogramează vizite, trimite formulare de admisie, vede statusul programărilor | Se alătură vizitelor video, vede notele clinice, accesează rapoartele de facturare |
+| **Facturare (Billing)** | Vede și gestionează facturi, configurarea asigurărilor, rapoarte de plată | Programează vizite, vede notele clinice |
+| **Auditor doar-citire** | Vede jurnalele de activitate și rapoartele | Modifică orice setare, vede date medicale protejate (PHI) |
 
-Roles can be combined — a staff member can be both **Front Desk** and **Billing**, for example.
+Rolurile pot fi combinate — un membru al personalului poate avea, de exemplu, atât rolul **Recepție**, cât și **Facturare**.
 
-## Sending an invite
+## Trimiterea unei invitații
 
-1. Go to **Settings → Team → Invite Member**.
-2. Enter the staff member's email and choose one or more roles.
-3. If inviting a **Provider**, also select which **Location(s)** they'll be assigned to (see [Clinic Profile → Locations](/getting-started/clinic-profile#locations)).
-4. Click **Send Invite**. The recipient gets an email with a link valid for 7 days.
+1. Accesează **Setări → Echipă → Invită membru**.
+2. Introdu adresa de email a persoanei și alege unul sau mai multe roluri.
+3. Dacă inviți un **Medic**, selectează și **locația (locațiile)** la care va fi alocat (vezi [Profilul clinicii → Locații](/getting-started/clinic-profile#locations)).
+4. Apasă **Trimite invitația**. Destinatarul primește un email cu un link valabil 7 zile.
 
-Dr. Osei invites her medical assistant, Jordan, as **Front Desk + Billing**, so Jordan can manage the calendar and follow up on unpaid invoices, without being able to open patient video visits or clinical notes.
+Dr. Osei o invită pe asistenta ei medicală, Jordan, cu rolurile **Recepție + Facturare**, astfel încât Jordan poate gestiona calendarul și poate urmări facturile neplătite, fără să poată deschide vizitele video ale pacienților sau notele clinice.
 
-## Two-factor authentication
+## Autentificare în doi pași
 
-Because staff accounts can access PHI, SuperMed requires two-factor authentication (2FA) for every role except Read-only Auditor once your clinic has more than one active team member. Staff will be prompted to set up 2FA (authenticator app or SMS) on first login.
+Deoarece conturile personalului pot accesa date medicale protejate (PHI), DemoMed impune autentificarea în doi pași (2FA) pentru orice rol, cu excepția Auditorului doar-citire, de îndată ce clinica ta are mai mult de un membru activ în echipă. Personalul va fi rugat să configureze 2FA (aplicație de autentificare sau SMS) la prima autentificare.
 
-## Removing or downgrading access
+## Eliminarea sau restrângerea accesului
 
-Deactivate a departing staff member immediately from **Settings → Team**, rather than waiting until offboarding is "convenient" — deactivation immediately revokes API tokens and active sessions. Deactivated accounts are kept (not deleted) for 7 years to preserve the audit trail, in line with the retention policy described in [Data Retention](/security-compliance/data-retention).
+Dezactivează imediat din **Setări → Echipă** un membru al personalului care pleacă, în loc să aștepți un moment „convenabil” — dezactivarea revocă imediat token-urile API și sesiunile active. Conturile dezactivate sunt păstrate (nu șterse) timp de 7 ani, pentru a menține jurnalul de audit, conform politicii de retenție descrise în [Retenția datelor](/security-compliance/data-retention).
 
-## Next steps
+## Pașii următori
 
-Your account, clinic profile, and team are set up. Now configure how video visits will actually work: [Video & Audio Device Setup](/video-consultations/device-setup).
+Contul tău, profilul clinicii și echipa sunt configurate. Acum configurează efectiv modul în care vor funcționa vizitele video: [Configurarea dispozitivelor video și audio](/video-consultations/device-setup).

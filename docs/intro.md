@@ -2,32 +2,32 @@
 sidebar_position: 1
 ---
 
-# Welcome to the SuperMed Help Center
+# Bun venit la Centrul de Asistență DemoMed
 
-SuperMed is an all-in-one telehealth platform that lets independent clinics and small practices run secure video consultations, manage scheduling, collect patient intake forms, and handle billing — without juggling five different tools.
+DemoMed este o platformă de telemedicină completă, care le permite clinicilor independente și cabinetelor mici să organizeze consultații video securizate, să gestioneze programările, să colecteze formulare de admisie de la pacienți și să administreze facturarea — fără să folosească cinci instrumente diferite.
 
-This site is the documentation and FAQ hub for clinic administrators and physicians setting up and running their practice on SuperMed. Use the search bar at the top of the page to jump straight to an answer, or browse the sections below.
+Acest site este centrul de documentație și întrebări frecvente pentru administratorii de clinici și medicii care își configurează și își administrează cabinetul pe DemoMed. Folosește bara de căutare din partea de sus a paginii pentru a ajunge direct la un răspuns sau răsfoiește secțiunile de mai jos.
 
-## Where to start
+## De unde începi
 
-- **New to SuperMed?** Start with [Creating your clinic account](/getting-started/account-setup) and [Setting up your clinic profile](/getting-started/clinic-profile).
-- **Getting ready for your first video visit?** See [Video & Audio Device Setup](/video-consultations/device-setup) and [Starting a Consultation](/video-consultations/starting-a-call).
-- **Need to open your calendar to patients?** Read [Setting Your Availability](/scheduling/availability).
-- **Have a quick question?** Check the [FAQ](/faq/general-faq) section.
+- **Ești nou pe DemoMed?** Începe cu [Crearea contului clinicii tale](/getting-started/account-setup) și [Configurarea profilului clinicii](/getting-started/clinic-profile).
+- **Te pregătești pentru prima ta vizită video?** Vezi [Configurarea dispozitivelor video și audio](/video-consultations/device-setup) și [Începerea unei consultații](/video-consultations/starting-a-call).
+- **Vrei să-ți deschizi calendarul pentru pacienți?** Citește [Setarea disponibilității tale](/scheduling/availability).
+- **Ai o întrebare rapidă?** Consultă secțiunea [Întrebări frecvente](/faq/general-faq).
 
-:::tip Support
-Can't find what you're looking for? Email **support@supermed.example** or use the in-app chat bubble in the bottom-right corner of your SuperMed dashboard — our support team typically responds within one business day.
+:::tip Suport
+Nu găsești ce cauți? Trimite un email la **support@demomed.example** sau folosește chat-ul din colțul din dreapta jos al panoului tău DemoMed — echipa noastră de suport răspunde de obicei în cel mult o zi lucrătoare.
 :::
 
-## What SuperMed includes
+## Ce include DemoMed
 
-| Area | What it covers |
+| Zonă | Ce acoperă |
 |---|---|
-| **Clinic setup** | Practice profile, staff accounts, roles & permissions, branding |
-| **Video consultations** | Waiting rooms, screen sharing, consent recording, connection troubleshooting |
-| **Scheduling** | Provider availability, appointment types, patient self-booking links |
-| **Patient management** | Digital intake forms, patient records, e-prescriptions |
-| **Billing** | Insurance configuration, co-pay collection, invoicing |
-| **Security & compliance** | HIPAA safeguards, data retention, access logs |
+| **Configurarea clinicii** | Profilul cabinetului, conturile personalului, roluri și permisiuni, branding |
+| **Consultații video** | Săli de așteptare, partajare ecran, consimțământ pentru înregistrare, depanarea conexiunii |
+| **Programări** | Disponibilitatea medicului, tipuri de programări, linkuri de auto-programare pentru pacienți |
+| **Gestionarea pacienților** | Formulare digitale de admisie, fișe de pacient, rețete electronice |
+| **Facturare** | Configurarea asigurării, colectarea co-plăților, facturare |
+| **Securitate și conformitate** | Măsuri de protecție HIPAA, retenția datelor, jurnale de acces |
 
-Most articles in this guide are written from the perspective of a clinic administrator (often the physician themselves, for solo practices) configuring SuperMed for the first time.
+Majoritatea articolelor din acest ghid sunt scrise din perspectiva unui administrator de clinică (adesea chiar medicul, în cazul cabinetelor individuale) care configurează DemoMed pentru prima dată.

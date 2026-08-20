@@ -2,45 +2,45 @@
 sidebar_position: 1
 ---
 
-# Digital Intake Forms
+# Formulare digitale de admisie
 
-Intake forms collect patient information before a visit — history, current medications, reason for visit, and insurance details — so providers walk in prepared.
+Formularele de admisie colectează informații despre pacient înainte de o vizită — istoric medical, medicație curentă, motivul vizitei și detalii despre asigurare — astfel încât medicul să vină pregătit.
 
-## Using a template
+## Folosirea unui șablon
 
-SuperMed ships with specialty-specific starter templates selected based on the specialty you set in your [clinic profile](/getting-started/clinic-profile). Dr. Osei's **Family Medicine** template includes:
+DemoMed vine cu șabloane inițiale specifice fiecărei specialități, selectate în funcție de specialitatea setată în [profilul clinicii](/getting-started/clinic-profile). Șablonul **Medicină de familie** al Dr. Osei include:
 
-- Demographics & emergency contact
-- Insurance information
-- Current medications & allergies
-- Reason for visit (free text)
-- Standard consent-to-treat and telehealth consent language
+- Date demografice și contact de urgență
+- Informații despre asigurare
+- Medicație curentă și alergii
+- Motivul vizitei (text liber)
+- Textul standard de consimțământ pentru tratament și pentru telemedicină
 
-Go to **Forms → Templates → Family Medicine Intake** to view or duplicate it before customizing.
+Accesează **Formulare → Șabloane → Admisie Medicină de familie** pentru a-l vizualiza sau a-l duplica înainte de a-l personaliza.
 
-## Customizing a form
+## Personalizarea unui formular
 
-Duplicate a template (editing the original template is disabled to avoid accidentally breaking the default) and use the form builder to add, remove, or reorder fields. Supported field types include short text, long text, single choice, multiple choice, date, file upload (e.g. photo of insurance card), and signature.
+Duplică un șablon (editarea șablonului original este dezactivată, pentru a evita alterarea accidentală a celui implicit) și folosește constructorul de formulare pentru a adăuga, elimina sau reordona câmpuri. Tipurile de câmpuri acceptate includ text scurt, text lung, opțiune unică, opțiuni multiple, dată, încărcare de fișier (de ex. fotografia cardului de asigurare) și semnătură.
 
-Dr. Osei adds a custom question, "Have you had a flu or COVID vaccine in the last 12 months?", as a required single-choice field.
+Dr. Osei adaugă o întrebare personalizată, „Ai făcut vaccinul antigripal sau anti-COVID în ultimele 12 luni?”, ca și câmp obligatoriu cu opțiune unică.
 
-## Assigning forms to appointment types
+## Alocarea formularelor pe tipuri de programări
 
-Forms aren't sent automatically unless linked to an [appointment type](/scheduling/appointment-types) under **Schedule → Appointment Types → [type] → Intake Form**. You can also manually send any form ad hoc from a patient's chart via **Send Form**.
+Formularele nu se trimit automat decât dacă sunt asociate unui [tip de programare](/scheduling/appointment-types) din **Agendă → Tipuri de programări → [tip] → Formular de admisie**. Poți trimite manual orice formular, ad-hoc, din fișa unui pacient, folosind **Trimite formular**.
 
-## When forms are sent
+## Când se trimit formularele
 
-By default, intake forms are emailed immediately upon booking, with a reminder sent 24 hours before the visit if not yet completed. Timing is configurable under **Forms → Settings → Send Timing**. Front desk staff can see completion status directly on the day's schedule as a colored dot (green = complete, yellow = started, red = not started).
+Implicit, formularele de admisie sunt trimise prin email imediat după programare, cu un reminder trimis cu 24 de ore înainte de vizită dacă nu au fost încă completate. Momentul trimiterii este configurabil din **Formulare → Setări → Programarea trimiterii**. Personalul de recepție poate vedea statusul completării direct în agenda zilei, ca un punct colorat (verde = complet, galben = început, roșu = neînceput).
 
-## Required vs. optional completion
+## Completare obligatorie vs. opțională
 
-Under **Forms → Settings**, choose whether an incomplete intake form:
+Din **Formulare → Setări**, alege dacă un formular de admisie incomplet:
 
-- **Blocks check-in** — the patient cannot be admitted from the waiting room until the form is submitted (a warning is shown to the provider with an override option), or
-- **Is advisory only** — the provider sees a "form incomplete" flag but can proceed regardless.
+- **Blochează check-in-ul** — pacientul nu poate fi admis din sala de așteptare până nu este trimis formularul (medicul vede un avertisment, cu opțiune de suprascriere), sau
+- **Este doar informativ** — medicul vede un marcaj „formular incomplet”, dar poate continua indiferent de acesta.
 
-Most solo practices, including Riverside Family Health, use advisory-only, since blocking check-in can create friction for patients who forget or have technical trouble with the form.
+Majoritatea cabinetelor individuale, inclusiv Riverside Family Health, folosesc opțiunea doar informativă, deoarece blocarea check-in-ului poate crea fricțiuni pentru pacienții care uită sau întâmpină probleme tehnice cu formularul.
 
-## Where responses go
+## Unde ajung răspunsurile
 
-Completed intake forms attach to the patient's chart under **Patient → Forms** and are visible to the provider before and during the visit in the side panel. Responses are also available in **Reports → Form Exports** as a CSV for practices that need to feed data into an external EHR.
+Formularele de admisie completate se atașează la fișa pacientului, la **Pacient → Formulare**, și sunt vizibile medicului înainte și în timpul vizitei, în panoul lateral. Răspunsurile sunt disponibile și în **Rapoarte → Exporturi formulare**, ca fișier CSV, pentru cabinetele care trebuie să introducă datele într-un sistem extern de fișă medicală electronică (EHR).

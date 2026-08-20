@@ -2,45 +2,45 @@
 sidebar_position: 2
 ---
 
-# Configuring the Waiting Room
+# Configurarea sălii de așteptare
 
-The waiting room is what a patient sees when they click their visit link before the provider has joined. Configuring it well reduces no-shows and last-minute confusion.
+Sala de așteptare este ce vede un pacient atunci când dă clic pe linkul vizitei sale, înainte ca medicul să se alăture. O configurare bună reduce absențele și confuzia de ultim moment.
 
-## Enabling the waiting room
+## Activarea sălii de așteptare
 
-Waiting rooms are **on by default** for all new clinics and can be managed under **Settings → Video → Waiting Room**. With it enabled:
+Sălile de așteptare sunt **activate implicit** pentru toate clinicile noi și pot fi gestionate din **Setări → Video → Sala de așteptare**. Cu funcția activată:
 
-- Patients who click their visit link are placed in a holding screen and cannot see or hear the provider until admitted.
-- Providers see a notification badge with the count of patients currently waiting.
-- The provider explicitly admits each patient by clicking **Admit** from the visit dashboard.
+- Pacienții care dau clic pe linkul vizitei ajung într-un ecran de așteptare și nu pot vedea sau auzi medicul până nu sunt admiși.
+- Medicii văd o insignă de notificare cu numărul de pacienți aflați în prezent în așteptare.
+- Medicul admite explicit fiecare pacient apăsând **Admite** din panoul vizitei.
 
-Turning the waiting room off lets patients join the call directly once the provider starts it — this is only recommended for group visits or clinics that pre-verify patient identity another way, since it removes the identity-check step described below.
+Dezactivarea sălii de așteptare permite pacienților să se alăture direct apelului odată ce medicul îl pornește — acest lucru este recomandat doar pentru vizite de grup sau pentru clinicile care verifică identitatea pacientului în alt mod, deoarece elimină pasul de verificare a identității descris mai jos.
 
-## Identity check
+## Verificarea identității
 
-While in the waiting room, patients are asked to confirm:
+În timp ce se află în sala de așteptare, pacienților li se cere să confirme:
 
-- Full legal name
-- Date of birth
+- Numele legal complet
+- Data nașterii
 
-This is shown to the provider next to the **Admit** button so you can cross-check it against the scheduled appointment before letting someone into the visit — important for shared devices or family accounts where the wrong household member might click the link.
+Aceste informații sunt afișate medicului lângă butonul **Admite**, astfel încât să le poți verifica în raport cu programarea planificată înainte de a lăsa pe cineva să intre în vizită — important pentru dispozitivele partajate sau conturile de familie, unde membrul greșit al gospodăriei ar putea da clic pe link.
 
-## Custom waiting room message
+## Mesaj personalizat pentru sala de așteptare
 
-Under **Settings → Video → Waiting Room → Message**, set custom text shown to waiting patients, for example:
+Din **Setări → Video → Sala de așteptare → Mesaj**, setează un text personalizat afișat pacienților care așteaptă, de exemplu:
 
-> "Thanks for joining, Dr. Osei will be with you shortly. If you haven't already, please complete your intake form — a link was sent to your email."
+> „Mulțumim că te-ai alăturat, Dr. Osei va fi cu tine în scurt timp. Dacă nu ai făcut-o deja, te rugăm completează formularul de admisie — un link a fost trimis pe email.”
 
-You can also enable **Show estimated wait time**, which pulls from the provider's current visit duration to give patients a rough estimate.
+Poți activa și opțiunea **Afișează timpul estimat de așteptare**, care se calculează pe baza duratei curente a vizitei medicului pentru a oferi pacienților o estimare aproximativă.
 
-## Multiple patients waiting
+## Mai mulți pacienți în așteptare
 
-When several patients are in the waiting room simultaneously (common if a provider is running behind schedule), the list is sorted by scheduled appointment time, not by arrival time — so a patient who joins early for a 2:00 PM visit won't jump ahead of a patient scheduled for 1:45 PM who joined a minute later.
+Când mai mulți pacienți se află simultan în sala de așteptare (frecvent atunci când un medic are întârziere), lista este sortată după ora programată a vizitei, nu după ora sosirii — astfel, un pacient care se alătură devreme pentru o vizită de la 14:00 nu va trece înaintea unui pacient programat la 13:45 care s-a alăturat cu un minut mai târziu.
 
-## Late patients and no-shows
+## Pacienți întârziați și absențe
 
-If a patient hasn't joined the waiting room within the grace period configured under **Settings → Video → No-show Grace Period** (default 10 minutes), the appointment is automatically flagged as **No-show** in the schedule, and a follow-up email is optionally sent (configurable in **Settings → Notifications**).
+Dacă un pacient nu s-a alăturat sălii de așteptare în intervalul de grație configurat din **Setări → Video → Interval de grație pentru absențe** (implicit 10 minute), programarea este marcată automat ca **Absență** în agendă, iar opțional se trimite un email de urmărire (configurabil din **Setări → Notificări**).
 
-## Next steps
+## Pașii următori
 
-Once the waiting room is configured, review [Starting a Consultation](/video-consultations/starting-a-call) for the actual in-visit workflow.
+După ce sala de așteptare este configurată, consultă [Începerea unei consultații](/video-consultations/starting-a-call) pentru fluxul de lucru efectiv din timpul vizitei.

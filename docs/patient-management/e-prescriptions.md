@@ -2,37 +2,37 @@
 sidebar_position: 3
 ---
 
-# E-Prescriptions
+# Rețete electronice
 
-SuperMed integrates with a certified e-prescribing network to let providers send prescriptions directly to a patient's pharmacy during or after a video visit.
+DemoMed se integrează cu o rețea certificată de prescriere electronică, permițând medicilor să trimită rețete direct către farmacia pacientului, în timpul sau după o vizită video.
 
-## Enabling e-prescribing
+## Activarea prescrierii electronice \{#enabling-e-prescribing}
 
-E-prescribing must be enabled per-provider, since it requires validating individual DEA and state license numbers: **Settings → Prescribing → Enable for [Provider Name]**. You'll need:
+Prescrierea electronică trebuie activată per medic, deoarece necesită validarea numerelor individuale DEA și a licențelor pe regiune: **Setări → Prescriere → Activează pentru [Numele medicului]**. Vei avea nevoie de:
 
-- Active DEA number (for controlled substances) and/or NPI number.
-- State license number(s) for every state you're prescribing into.
-- Completion of identity proofing required for EPCS (Electronic Prescribing of Controlled Substances), which involves a third-party identity verification step and, in most cases, two-factor authentication at the time of signing a controlled-substance prescription.
+- Un număr DEA activ (pentru substanțe controlate) și/sau un număr NPI.
+- Număr(e) de licență pentru fiecare regiune în care prescrii.
+- Finalizarea verificării identității cerute pentru EPCS (prescrierea electronică a substanțelor controlate), care presupune un pas de verificare a identității realizat de un terț și, în majoritatea cazurilor, autentificare în doi pași în momentul semnării unei rețete pentru o substanță controlată.
 
-Verification for non-controlled prescribing typically takes 1–2 business days; EPCS approval can take up to 2 weeks due to the additional identity-proofing step.
+Verificarea pentru prescrierea de substanțe necontrolate durează de obicei 1–2 zile lucrătoare; aprobarea EPCS poate dura până la 2 săptămâni, din cauza pasului suplimentar de verificare a identității.
 
-## Sending a prescription during a visit
+## Trimiterea unei rețete în timpul unei vizite
 
-From the in-visit clinical notes panel (see [Starting a Consultation](/video-consultations/starting-a-call)), click **Prescribe** to:
+Din panoul de note clinice din timpul vizitei (vezi [Începerea unei consultații](/video-consultations/starting-a-call)), apasă **Prescrie** pentru a:
 
-1. Search the medication database by name.
-2. Select dose, quantity, refills, and directions (SIG).
-3. Choose the patient's pharmacy — SuperMed pulls previously used pharmacies for that patient, or you can search by name/location.
-4. Review and sign. Controlled substances require re-entering your 2FA code at this step even if you're already logged in.
+1. Căuta medicamentul în baza de date, după nume.
+2. Selecta doza, cantitatea, numărul de repetări și indicațiile de administrare.
+3. Alege farmacia pacientului — DemoMed sugerează farmaciile folosite anterior de acel pacient, sau poți căuta după nume/locație.
+4. Revizui și semna. Substanțele controlate necesită reintroducerea codului 2FA la acest pas, chiar dacă ești deja autentificat.
 
-## Checking prescription status
+## Verificarea statusului unei rețete
 
-Sent prescriptions appear under **Patient → Prescriptions** with a status: **Sent**, **Received by pharmacy**, **Filled**, or **Error**. Errors (e.g. pharmacy rejected due to insurance issue) trigger a notification to the prescribing provider so it can be resubmitted or called in manually.
+Rețetele trimise apar în **Pacient → Rețete**, cu un status: **Trimisă**, **Primită de farmacie**, **Eliberată** sau **Eroare**. Erorile (de ex. farmacia a respins din cauza unei probleme de asigurare) declanșează o notificare către medicul prescriptor, astfel încât rețeta să poată fi retrimisă sau transmisă telefonic manual.
 
-## Medication history and interaction checks
+## Istoricul medicației și verificarea interacțiunilor
 
-SuperMed automatically checks new prescriptions against medications already listed in the patient's chart (whether prescribed through SuperMed or manually entered from the intake form) and flags potential interactions or duplicate therapy before you can sign. These warnings can be acknowledged and overridden with a documented reason, but cannot be silently dismissed.
+DemoMed verifică automat rețetele noi în raport cu medicația deja listată în fișa pacientului (fie prescrisă prin DemoMed, fie introdusă manual din formularul de admisie) și semnalează posibile interacțiuni sau tratamente duplicate înainte să poți semna. Aceste avertismente pot fi confirmate și suprascrise cu un motiv documentat, dar nu pot fi închise fără explicație.
 
-## Prescribing across state lines
+## Prescrierea peste granițele regionale \{#prescribing-across-state-lines}
 
-Because prescribing legality depends on both provider licensure and the patient's physical location at the time of the visit, SuperMed requires confirming the patient's current state at check-in (pre-filled from their profile, editable if they're traveling) and will block prescribing — with an explanation — if the provider isn't licensed in that state. See [Can I see patients who are located in a different state?](/faq/general-faq#cross-state) for more on multi-state licensure.
+Deoarece legalitatea prescrierii depinde atât de licențierea medicului, cât și de locația fizică a pacientului în momentul vizitei, DemoMed cere confirmarea regiunii curente a pacientului la check-in (pre-completată din profilul lui, editabilă dacă este în călătorie) și va bloca prescrierea — cu o explicație — dacă medicul nu este licențiat în acea regiune. Vezi [Pot avea pacienți aflați într-o altă regiune?](/faq/general-faq#cross-state) pentru mai multe detalii despre licențierea multi-regională.

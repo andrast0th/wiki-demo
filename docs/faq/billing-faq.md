@@ -2,32 +2,32 @@
 sidebar_position: 3
 ---
 
-# Billing FAQ
+# Întrebări frecvente despre facturare
 
-### Why was a claim rejected instead of denied — what's the difference?
+### De ce a fost respinsă o decontare, în loc să fie refuzată — care e diferența?
 
-A **rejection** happens at the clearinghouse level, before the insurance payer ever processes it — usually due to a formatting issue like a missing modifier or mismatched patient ID. It can be corrected and resubmitted right away from **Billing → Claims**. A **denial** means the payer received and processed the claim but declined to pay, for a substantive reason (e.g. service not covered, prior authorization missing) shown as a reason code — this may require an appeal rather than a simple resubmission. See [Payments & Invoicing](/billing/payments-invoicing#submitting-insurance-claims).
+O **respingere** se produce la nivelul casei de compensare, înainte ca asigurătorul să o proceseze — de obicei din cauza unei probleme de format, precum un modificator lipsă sau un ID de pacient nepotrivit. Poate fi corectată și retrimisă imediat din **Facturare → Decontări**. Un **refuz** înseamnă că asigurătorul a primit și a procesat decontarea, dar a refuzat plata, pentru un motiv de fond (de ex. serviciu neacoperit, autorizare prealabilă lipsă), afișat ca un cod de motiv — acesta poate necesita o contestație, nu doar o simplă retrimitere. Vezi [Plăți și facturare](/billing/payments-invoicing#submitting-insurance-claims).
 
-### Can I charge patients a no-show fee automatically?
+### Pot percepe automat o taxă de absență pacienților?
 
-Yes, if you've enabled it for the relevant [appointment type](/scheduling/appointment-types#cancellation-policy-per-type) and connected a payment processor (see [Insurance & Payment Setup](/billing/insurance-setup#connecting-a-payment-processor)). The fee is charged to the card on file when a patient misses the cancellation window, and the patient is notified with a dispute link.
+Da, dacă ai activat-o pentru [tipul de programare](/scheduling/appointment-types#cancellation-policy-per-type) relevant și ai conectat un procesator de plăți (vezi [Configurarea asigurării și plăților](/billing/insurance-setup#connecting-a-payment-processor)). Taxa este percepută pe cardul din dosar atunci când un pacient ratează intervalul de anulare, iar pacientul este notificat cu un link de contestare.
 
-### How do refunds work?
+### Cum funcționează rambursările?
 
-Refunds are issued from **Billing → Invoices → [invoice] → Refund** by a **Billing** or **Owner** role staff member, and route back to the patient's original payment method — typically posting within 5–10 business days. See [Payments & Invoicing](/billing/payments-invoicing#refunds).
+Rambursările sunt emise din **Facturare → Facturi → [factură] → Rambursare** de către un membru al personalului cu rol de **Facturare** sau **Proprietar** și se întorc pe metoda de plată originală a pacientului — de obicei apar în 5–10 zile lucrătoare. Vezi [Plăți și facturare](/billing/payments-invoicing#refunds).
 
-### Can I offer a sliding-scale or discounted self-pay rate?
+### Pot oferi un tarif de plată directă redus sau pe bază de venit?
 
-There's no automated income-based sliding scale, but you can manually adjust an individual invoice's amount before it's sent from **Billing → Invoices → [invoice] → Adjust**, with a required reason note for your own records. For a standing discount (e.g. a reduced rate for uninsured patients generally), create a separate self-pay appointment type with the lower rate under [Appointment Types](/scheduling/appointment-types).
+Nu există un sistem automat de tarife variabile în funcție de venit, dar poți ajusta manual suma unei facturi individuale înainte de trimitere, din **Facturare → Facturi → [factură] → Ajustează**, cu o notă obligatorie de motiv, pentru evidențele tale. Pentru o reducere permanentă (de ex. un tarif redus pentru pacienții neasigurați, în general), creează un tip separat de programare cu plată directă, cu tariful mai mic, din [Tipuri de programări](/scheduling/appointment-types).
 
-### Does SuperMed take a cut of patient payments?
+### DemoMed reține un comision din plățile pacienților?
 
-SuperMed charges standard payment processing fees passed through from the connected processor (shown at setup under **Billing → Payment Settings → Payment Processor**) — there is no separate SuperMed markup on top of processor fees for Practice and Network plans. Solo plan pricing details are shown on the same settings page and may include a small platform fee; check your current plan's terms there, since fee structures can change between plan tiers.
+DemoMed percepe comisioanele standard de procesare a plăților, transmise de procesatorul conectat (afișate la configurare, în **Facturare → Setări de plată → Procesator de plăți**) — nu există un comision suplimentar DemoMed peste comisioanele procesatorului, pentru planurile Practice și Network. Detaliile de preț pentru planul Solo sunt afișate pe aceeași pagină de setări și pot include un mic comision de platformă; verifică acolo termenii planului tău curent, deoarece structura comisioanelor poate varia între planuri.
 
-### Why is a patient's invoice showing a balance after insurance paid?
+### De ce factura unui pacient arată un sold rămas după ce asigurarea a plătit?
 
-The invoice reflects patient responsibility, not total charges — after a claim is marked **Paid** in **Billing → Claims**, the invoice automatically updates to reflect only the patient's remaining co-pay, coinsurance, or deductible amount as reported by the payer. If the number looks wrong, check the posted payment details on the claim itself for the payer's breakdown before assuming it's a SuperMed calculation error.
+Factura reflectă responsabilitatea pacientului, nu suma totală facturată — după ce o decontare este marcată ca **Plătită** în **Facturare → Decontări**, factura se actualizează automat pentru a reflecta doar co-plata, coasigurarea sau franșiza rămasă în sarcina pacientului, conform raportării asigurătorului. Dacă suma pare greșită, verifică detaliile plății înregistrate pe decontarea respectivă, pentru defalcarea făcută de asigurător, înainte de a presupune că este o eroare de calcul a DemoMed.
 
-### Can front desk staff see billing without seeing clinical notes?
+### Personalul de recepție poate vedea facturarea fără să vadă notele clinice?
 
-Yes — assign the **Billing** role (optionally combined with **Front Desk**) rather than **Provider**. Billing role staff can view and manage invoices, claims, and payment reports, but cannot open clinical notes or video visits. See [Roles overview](/getting-started/inviting-staff#roles-overview).
+Da — alocă rolul **Facturare** (opțional combinat cu **Recepție**), nu rolul **Medic**. Personalul cu rolul Facturare poate vedea și gestiona facturi, decontări și rapoarte de plată, dar nu poate deschide note clinice sau vizite video. Vezi [Prezentarea rolurilor](/getting-started/inviting-staff#roles-overview).

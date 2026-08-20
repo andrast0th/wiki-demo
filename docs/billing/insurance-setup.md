@@ -2,44 +2,44 @@
 sidebar_position: 1
 ---
 
-# Insurance & Payment Setup
+# Configurarea asigurării și plăților
 
-SuperMed supports both insurance billing (via claims clearinghouse integration) and direct self-pay, and clinics can offer either or both.
+DemoMed suportă atât facturarea prin asigurare (prin integrare cu o casă de compensare a decontărilor), cât și plata directă, iar clinicile pot oferi oricare dintre variante, sau ambele.
 
-## Connecting a clearinghouse
+## Conectarea unei case de compensare
 
-Under **Billing → Insurance → Clearinghouse**, connect your clearinghouse account (SuperMed supports the major national clearinghouses via a standard EDI 837 connection). You'll need your clinic's:
+Din **Facturare → Asigurări → Casă de compensare**, conectează contul casei de compensare (DemoMed suportă principalele case de compensare naționale printr-o conexiune standard EDI 837). Vei avea nevoie de, pentru clinica ta:
 
-- Tax ID (EIN)
-- NPI (organizational, if applicable, in addition to individual provider NPIs)
-- Clearinghouse account credentials
+- Codul fiscal (CUI/CIF)
+- Numărul NPI (organizațional, dacă este cazul, pe lângă numerele NPI individuale ale medicilor)
+- Credențialele contului la casa de compensare
 
-Once connected, eligibility checks can run automatically when a patient's insurance is entered on their intake form (**Billing → Insurance → Auto Eligibility Check**), showing front desk a real-time "Active" / "Inactive" / "Needs Review" status before the visit.
+Odată conectat, verificările de eligibilitate pot rula automat atunci când asigurarea unui pacient este introdusă în formularul de admisie (**Facturare → Asigurări → Verificare automată a eligibilității**), afișând recepției un status în timp real: „Activă” / „Inactivă” / „Necesită verificare”, înainte de vizită.
 
-## Accepted payers
+## Plătitori acceptați
 
-List which insurance payers your clinic accepts under **Billing → Insurance → Accepted Payers**. This list drives:
+Listează ce asigurători acceptă clinica ta din **Facturare → Asigurări → Plătitori acceptați**. Această listă controlează:
 
-- The dropdown patients see on the intake form's insurance section.
-- A "Not currently accepted" warning shown to front desk if a patient enters a payer outside this list, so it can be caught before the visit rather than after the claim is denied.
+- Meniul derulant pe care îl văd pacienții în secțiunea de asigurare a formularului de admisie.
+- Un avertisment „Momentan neacceptat”, afișat recepției dacă un pacient introduce un plătitor din afara acestei liste, astfel încât problema să fie depistată înainte de vizită, nu după respingerea decontării.
 
-## Self-pay pricing
+## Prețuri pentru plata directă
 
-Under **Billing → Payment Settings → Self-Pay Rates**, set a flat rate per [appointment type](/scheduling/appointment-types), or mark a type as "insurance only" to hide self-pay pricing for services you don't want billed out of pocket.
+Din **Facturare → Setări de plată → Tarife plată directă**, setează un tarif fix per [tip de programare](/scheduling/appointment-types), sau marchează un tip ca „doar prin asigurare” pentru a ascunde prețul de plată directă pentru serviciile pe care nu vrei să le facturezi din buzunar.
 
-## Connecting a payment processor
+## Conectarea unui procesator de plăți \{#connecting-a-payment-processor}
 
-To collect card payments (co-pays, self-pay balances, or no-show fees), connect a payment processor under **Billing → Payment Settings → Payment Processor**. SuperMed does not store full card numbers — the processor tokenizes card details and SuperMed only stores the token and card last-4 for reference, in line with PCI DSS requirements.
+Pentru a încasa plăți cu cardul (co-plăți, solduri de plată directă sau taxe de absență), conectează un procesator de plăți din **Facturare → Setări de plată → Procesator de plăți**. DemoMed nu stochează numerele complete de card — procesatorul tokenizează detaliile cardului, iar DemoMed păstrează doar token-ul și ultimele 4 cifre ale cardului, ca referință, în conformitate cu cerințele PCI DSS.
 
-## Collecting co-pays
+## Colectarea co-plăților
 
-If a patient's insurance plan has a known co-pay amount on file, SuperMed can prompt for payment either:
+Dacă planul de asigurare al unui pacient are o co-plată cunoscută în dosar, DemoMed poate solicita plata fie:
 
-- **Before the visit** — at the end of the booking/intake flow, or
-- **After the visit** — as a standard invoice once the visit is marked complete.
+- **Înainte de vizită** — la finalul fluxului de rezervare/admisie, sau
+- **După vizită** — ca factură standard, odată ce vizita este marcată ca finalizată.
 
-Configure this under **Billing → Payment Settings → Co-pay Collection Timing**. Dr. Osei collects co-pays before the visit to reduce unpaid balances, since Riverside Family Health doesn't have dedicated billing staff to chase down payments afterward.
+Configurează asta din **Facturare → Setări de plată → Momentul colectării co-plății**. Dr. Osei colectează co-plățile înainte de vizită, pentru a reduce soldurile neplătite, deoarece Riverside Family Health nu are personal dedicat facturării care să urmărească plățile ulterior.
 
-## No-show fees
+## Taxe de absență
 
-If enabled per [appointment type](/scheduling/appointment-types#cancellation-policy-per-type), a no-show fee is automatically charged to the card on file when a patient misses a visit without canceling inside the configured window. Patients are notified by email with an itemized explanation and a link to dispute the charge, which routes to your **Billing** role staff for manual review.
+Dacă este activată per [tip de programare](/scheduling/appointment-types#cancellation-policy-per-type), o taxă de absență este percepută automat pe cardul din dosar atunci când un pacient lipsește de la o vizită fără să anuleze în intervalul configurat. Pacienții sunt notificați prin email, cu o explicație detaliată și un link pentru a contesta taxa, care ajunge la personalul cu rol de **Facturare** pentru verificare manuală.

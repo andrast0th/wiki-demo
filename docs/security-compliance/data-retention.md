@@ -2,32 +2,32 @@
 sidebar_position: 2
 ---
 
-# Data Retention
+# Retenția datelor
 
-## Default retention periods
+## Perioade implicite de retenție
 
-| Data type | Default retention | Configurable? |
+| Tip de date | Retenție implicită | Configurabilă? |
 |---|---|---|
-| Patient charts, clinical notes | 10 years after last activity | No — matches typical state medical record requirements |
-| Visit recordings | 90 days | Yes, 30–365 days or custom (Network plan) — see [Recording & Consent](/video-consultations/recording-consent#automatic-deletion) |
-| Chat transcripts (in-visit chat) | 90 days | No |
-| Deactivated staff accounts | 7 years | No |
-| Audit logs | 7 years | No |
-| Billing/invoice records | 7 years | No |
+| Fișe de pacient, note clinice | 10 ani de la ultima activitate | Nu — corespunde cerințelor tipice privind evidențele medicale |
+| Înregistrări ale vizitelor | 90 de zile | Da, 30–365 zile sau personalizat (plan Network) — vezi [Înregistrare și consimțământ](/video-consultations/recording-consent#automatic-deletion) |
+| Transcrieri de chat (chat din timpul vizitei) | 90 de zile | Nu |
+| Conturi de personal dezactivate | 7 ani | Nu |
+| Jurnale de audit | 7 ani | Nu |
+| Evidențe de facturare/facturi | 7 ani | Nu |
 
-Clinical and billing retention periods are set conservatively to satisfy the longest common state and federal requirements across the jurisdictions SuperMed operates in — check your own state's medical records retention law if your patients are concentrated in a single state, as some require longer minimums (SuperMed's defaults will never fall below your state's floor).
+Perioadele de retenție pentru date clinice și de facturare sunt setate conservator, pentru a satisface cele mai lungi cerințe naționale și locale comune, în toate jurisdicțiile în care operează DemoMed — verifică legea locală privind retenția evidențelor medicale dacă pacienții tăi sunt concentrați într-o singură regiune, deoarece unele impun minime mai lungi (valorile implicite DemoMed nu vor coborî niciodată sub pragul minim al regiunii tale).
 
-## Requesting patient record deletion
+## Solicitarea ștergerii fișei unui pacient \{#requesting-patient-record-deletion}
 
-Patients occasionally ask to have their data deleted. Because clinical records are subject to mandatory retention requirements, SuperMed **cannot** delete an active patient chart on request in the way a typical consumer app might delete an account. Instead:
+Din când în când, pacienții cer ștergerea datelor lor. Deoarece fișele clinice sunt supuse unor cerințe obligatorii de retenție, DemoMed **nu poate** șterge o fișă activă de pacient la cerere, în modul în care o aplicație obișnuită de consum ar șterge un cont. În schimb:
 
-- Non-clinical data (e.g. marketing communication preferences, an unconfirmed account with no visit history) can be deleted.
-- Clinical records can be marked **Restricted**, which hides them from routine staff views and search, while preserving them for the mandatory retention period as required by law. Only an **Owner** can apply or remove a restriction, and doing so is logged in the audit trail.
+- Datele neclinice (de ex. preferințele de comunicare de marketing, un cont neconfirmat fără istoric de vizite) pot fi șterse.
+- Fișele clinice pot fi marcate ca **Restricționate**, ceea ce le ascunde din vizualizările și căutările curente ale personalului, păstrându-le în același timp pentru perioada de retenție obligatorie cerută de lege. Doar un **Proprietar** poate aplica sau elimina o restricție, iar acțiunea este înregistrată în jurnalul de audit.
 
-## Exporting data before deletion
+## Exportarea datelor înainte de ștergere
 
-Anything scheduled for deletion (e.g. a recording nearing the end of its retention window) can be exported beforehand from its respective location — recordings from **Patient → Visit History**, forms from **Reports → Form Exports**, invoices from **Billing → Reports**. Once a retention window closes, deletion happens automatically and is not reversible.
+Orice este programat pentru ștergere (de ex. o înregistrare aproape de finalul perioadei de retenție) poate fi exportat în prealabil din locația sa respectivă — înregistrările din **Pacient → Istoricul vizitelor**, formularele din **Rapoarte → Exporturi formulare**, facturile din **Facturare → Rapoarte**. Odată ce o perioadă de retenție se încheie, ștergerea se produce automat și nu poate fi anulată.
 
-## Closing your clinic account
+## Închiderea contului clinicii tale
 
-If you close your SuperMed account (**Settings → Billing → Close Account**), patient clinical records are retained for the standard periods above even though the account is no longer active, since the retention obligation is tied to the records themselves, not to whether your subscription is current. You can request a full data export before closing — see **Settings → Compliance → Request Data Export**, which generates a downloadable archive within 5 business days.
+Dacă îți închizi contul DemoMed (**Setări → Facturare → Închide contul**), fișele clinice ale pacienților sunt păstrate pentru perioadele standard de mai sus, chiar dacă contul nu mai este activ, deoarece obligația de retenție este legată de fișele în sine, nu de starea abonamentului tău. Poți solicita un export complet al datelor înainte de închidere — vezi **Setări → Conformitate → Solicită export de date**, care generează o arhivă descărcabilă în 5 zile lucrătoare.

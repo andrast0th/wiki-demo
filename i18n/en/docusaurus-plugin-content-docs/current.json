@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Primii pași": {
+    "message": "Getting Started",
+    "description": "The label for category 'Primii pași' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Primii pași.link.generated-index.description": {
+    "message": "Set up your clinic, invite your team, and configure your account before your first DemoMed consultation.",
+    "description": "The generated-index page description for category 'Primii pași' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Consultații video": {
+    "message": "Video Consultations",
+    "description": "The label for category 'Consultații video' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Consultații video.link.generated-index.description": {
+    "message": "Configure devices, waiting rooms, and settings for secure video visits with patients.",
+    "description": "The generated-index page description for category 'Consultații video' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Programări": {
+    "message": "Scheduling",
+    "description": "The label for category 'Programări' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Programări.link.generated-index.description": {
+    "message": "Configure provider availability, appointment types, and patient self-booking.",
+    "description": "The generated-index page description for category 'Programări' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Gestionarea pacienților": {
+    "message": "Patient Management",
+    "description": "The label for category 'Gestionarea pacienților' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Gestionarea pacienților.link.generated-index.description": {
+    "message": "Intake forms, patient records, and e-prescriptions.",
+    "description": "The generated-index page description for category 'Gestionarea pacienților' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Facturare": {
+    "message": "Billing",
+    "description": "The label for category 'Facturare' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Facturare.link.generated-index.description": {
+    "message": "Insurance configuration, payments, and invoicing.",
+    "description": "The generated-index page description for category 'Facturare' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Securitate și conformitate": {
+    "message": "Security & Compliance",
+    "description": "The label for category 'Securitate și conformitate' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Securitate și conformitate.link.generated-index.description": {
+    "message": "How DemoMed protects patient data and what that means for your clinic's configuration.",
+    "description": "The generated-index page description for category 'Securitate și conformitate' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Întrebări frecvente": {
+    "message": "FAQ",
+    "description": "The label for category 'Întrebări frecvente' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Întrebări frecvente.link.generated-index.description": {
+    "message": "Quick answers to common questions about DemoMed.",
+    "description": "The generated-index page description for category 'Întrebări frecvente' in sidebar 'docsSidebar'"
+  }
+}

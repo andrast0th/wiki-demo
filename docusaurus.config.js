@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'SuperMed Help Center',
-  tagline: 'Documentation and FAQs for running your clinic on SuperMed',
+  title: 'DemoMed Help Center',
+  tagline: 'Documentation and FAQs for running your clinic on DemoMed',
   favicon: 'img/favicon.svg',
 
   headTags: [
@@ -64,16 +64,16 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'ro'],
+    defaultLocale: 'ro',
+    locales: ['ro', 'en'],
     localeConfigs: {
-      en: {
-        label: 'English',
-        htmlLang: 'en',
-      },
       ro: {
         label: 'Română',
         htmlLang: 'ro',
+      },
+      en: {
+        label: 'English',
+        htmlLang: 'en',
       },
     },
   },
@@ -88,6 +88,7 @@ const config = {
           sidebarPath: './sidebars.js',
           editUrl:
             'https://github.com/andrast0th/wiki-demo/tree/main/',
+          editLocalizedFiles: true, // "Edit this page" links to the file for the current locale (docs/ for ro, i18n/en/... for en), not always the ro source.
         },
         blog: false,
         theme: {
@@ -106,9 +107,9 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'SuperMed Help Center',
+        title: 'DemoMed Help Center',
         logo: {
-          alt: 'SuperMed Logo',
+          alt: 'DemoMed Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -157,7 +158,7 @@ const config = {
           },
         ],
         copyright:
-          'Unofficial documentation, built as a demo with Docusaurus + Pagefind — not affiliated with or endorsed by SuperMed.',
+          'Demo documentation site built with Docusaurus + Pagefind. DemoMed is a fictional product.',
       },
       prism: {
         theme: prismThemes.github,

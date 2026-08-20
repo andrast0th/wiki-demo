@@ -2,35 +2,35 @@
 sidebar_position: 1
 ---
 
-# HIPAA Compliance
+# Conformitatea HIPAA
 
-SuperMed is built to support HIPAA-compliant use by clinics, but compliance is a shared responsibility between SuperMed (as your Business Associate) and your clinic (as the Covered Entity).
+DemoMed este construit pentru a susține utilizarea conformă cu HIPAA de către clinici, dar conformitatea este o responsabilitate partajată între DemoMed (ca „Business Associate”) și clinica ta (ca „Covered Entity”).
 
-## Business Associate Agreement (BAA)
+## Acordul de asociere în afaceri (BAA)
 
-Before any real patient data is processed, your clinic must accept SuperMed's Business Associate Agreement: **Settings → Compliance → Business Associate Agreement**. This is a required step during [account setup](/getting-started/account-setup) — accounts cannot be moved to production status without an accepted BAA on file.
+Înainte ca orice date reale despre pacienți să fie procesate, clinica ta trebuie să accepte Acordul de asociere în afaceri (BAA) al DemoMed: **Setări → Conformitate → Acord de asociere în afaceri**. Acesta este un pas obligatoriu în timpul [configurării contului](/getting-started/account-setup) — conturile nu pot trece în status de producție fără un BAA acceptat, aflat în dosar.
 
-## What SuperMed handles
+## Ce gestionează DemoMed
 
-- **Encryption in transit and at rest** for all PHI, including video streams (SRTP/DTLS for live video), stored recordings, chart data, and forms.
-- **Access controls and audit logging** — every view, edit, or export of a patient record is logged with the acting user, timestamp, and action (see **Settings → Compliance → Audit Log**).
-- **Infrastructure-level safeguards** — redundant, access-controlled data centers and regular third-party security assessments.
+- **Criptare în tranzit și în repaus** pentru toate datele medicale protejate (PHI), inclusiv fluxurile video (SRTP/DTLS pentru video live), înregistrările stocate, datele din fișe și formulare.
+- **Controale de acces și jurnalizare de audit** — fiecare vizualizare, editare sau export al unei fișe de pacient este înregistrată împreună cu utilizatorul care a acționat, marcajul temporal și acțiunea (vezi **Setări → Conformitate → Jurnal de audit**).
+- **Măsuri de protecție la nivel de infrastructură** — centre de date redundante, cu acces controlat, și evaluări periodice de securitate realizate de terți.
 
-## What your clinic is responsible for
+## De ce este responsabilă clinica ta
 
-- **Workforce training** — ensuring staff understand acceptable use, e.g. not sharing login credentials (SuperMed's [role-based access](/getting-started/inviting-staff) exists precisely so individual staff don't need to share one login).
-- **Minimum necessary access** — assigning roles that reflect what each staff member actually needs to see, rather than defaulting everyone to Owner-level access.
-- **Device security** — providers and staff should use up-to-date browsers, lock their screens, and avoid accessing patient data on unsecured public Wi-Fi where reasonably avoidable.
-- **Patient-facing consent** — for features like [visit recording](/video-consultations/recording-consent), your clinic determines when and how to use them within your own compliance posture.
+- **Instruirea personalului** — asigurarea că personalul înțelege utilizarea acceptabilă, de ex. să nu partajeze credențialele de autentificare (funcția DemoMed de [acces bazat pe roluri](/getting-started/inviting-staff) există tocmai pentru ca fiecare membru al personalului să nu fie nevoit să partajeze un singur cont).
+- **Acces la minimul necesar** — alocarea unor roluri care reflectă exact ce trebuie să vadă fiecare membru al personalului, în loc ca toată lumea să primească implicit acces de nivel Proprietar.
+- **Securitatea dispozitivelor** — medicii și personalul ar trebui să folosească browsere actualizate, să-și blocheze ecranele și să evite accesarea datelor pacienților pe rețele Wi-Fi publice nesecurizate, ori de câte ori este rezonabil posibil.
+- **Consimțământul pacientului** — pentru funcții precum [înregistrarea vizitelor](/video-consultations/recording-consent), clinica ta decide când și cum le folosește, în cadrul propriei politici de conformitate.
 
-## Audit log
+## Jurnal de audit
 
-**Settings → Compliance → Audit Log** shows a searchable, exportable record of PHI access across your clinic: who viewed which patient chart, when a note was signed or amended, when a recording was downloaded, and login/logout events. Read-only Auditor role staff (see [Inviting Staff](/getting-started/inviting-staff#roles-overview)) can view this without any other PHI access.
+**Setări → Conformitate → Jurnal de audit** afișează o evidență căutabilă și exportabilă a accesului la date medicale protejate (PHI) în cadrul clinicii tale: cine a vizualizat ce fișă de pacient, când a fost semnată sau modificată o notă, când a fost descărcată o înregistrare și evenimentele de autentificare/deconectare. Personalul cu rolul de Auditor doar-citire (vezi [Prezentarea rolurilor](/getting-started/inviting-staff#roles-overview)) poate vedea acest jurnal fără niciun alt acces la PHI.
 
-## Breach notification
+## Notificarea incidentelor de securitate
 
-If SuperMed identifies a security incident affecting your clinic's data, notification procedures follow the timelines specified in your BAA. Clinic owners can review current incident status, if any, and past notices at **Settings → Compliance → Security Notices**.
+Dacă DemoMed identifică un incident de securitate care afectează datele clinicii tale, procedurile de notificare respectă termenele specificate în BAA-ul tău. Proprietarii de clinici pot verifica statusul curent al incidentelor, dacă există, și notificările anterioare, din **Setări → Conformitate → Notificări de securitate**.
 
-## Session timeouts
+## Expirarea sesiunii
 
-To reduce the risk of an unattended, logged-in device exposing PHI, SuperMed automatically signs staff out after a period of inactivity (default 30 minutes, configurable down to 10 minutes under **Settings → Compliance → Session Timeout** — it cannot be extended beyond 30 minutes for accounts with PHI access).
+Pentru a reduce riscul ca un dispozitiv autentificat și nesupravegheat să expună date medicale protejate, DemoMed deconectează automat personalul după o perioadă de inactivitate (implicit 30 de minute, configurabilă până la minimum 10 minute din **Setări → Conformitate → Expirarea sesiunii** — nu poate fi extinsă peste 30 de minute pentru conturile cu acces la PHI).

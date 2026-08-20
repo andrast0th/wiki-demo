@@ -1,8 +1,8 @@
 {
-  "label": "Getting Started",
+  "label": "Primii pași",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Set up your clinic, invite your team, and configure your account before your first SuperMed consultation."
+    "description": "Configurează-ți clinica, invită-ți echipa și pregătește-ți contul înainte de prima consultație pe DemoMed."
   }
 }

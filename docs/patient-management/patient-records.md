@@ -2,41 +2,41 @@
 sidebar_position: 2
 ---
 
-# Patient Records
+# Fișele pacienților
 
-Every patient in SuperMed has a chart containing demographics, visit history, clinical notes, intake responses, and attached documents.
+Fiecare pacient din DemoMed are o fișă care conține date demografice, istoricul vizitelor, note clinice, răspunsuri de admisie și documente atașate.
 
-## Creating a patient record manually
+## Crearea manuală a unei fișe de pacient
 
-While most records are created automatically when a patient books through your [booking link](/scheduling/patient-booking-links), front-desk staff can also create one directly: **Patients → New Patient**. Required fields are name, date of birth, and either an email or phone number.
+Deși majoritatea fișelor sunt create automat atunci când un pacient face o programare prin [linkul tău de rezervare](/scheduling/patient-booking-links), personalul de recepție poate crea una și direct: **Pacienți → Pacient nou**. Câmpurile obligatorii sunt numele, data nașterii și fie emailul, fie numărul de telefon.
 
-## Chart structure
+## Structura fișei
 
-Each patient chart is organized into tabs:
+Fiecare fișă de pacient este organizată pe file:
 
-- **Overview** — demographics, insurance on file, emergency contact, flags (allergies, etc.).
-- **Visit History** — past and upcoming appointments, with recordings/transcripts if enabled.
-- **Clinical Notes** — signed and draft notes, organized by visit date.
-- **Forms** — completed and pending intake forms.
-- **Documents** — uploaded files (referral letters, lab results, insurance cards).
-- **Billing** — invoices and payment history for this patient.
+- **Prezentare generală** — date demografice, asigurarea din dosar, contact de urgență, marcaje (alergii etc.).
+- **Istoricul vizitelor** — programări trecute și viitoare, cu înregistrări/transcrieri dacă sunt activate.
+- **Note clinice** — note semnate și ciorne, organizate după data vizitei.
+- **Formulare** — formulare de admisie completate și în așteptare.
+- **Documente** — fișiere încărcate (scrisori de trimitere, rezultate de laborator, carduri de asigurare).
+- **Facturare** — facturi și istoricul plăților pentru acest pacient.
 
-## Draft vs. signed clinical notes
+## Note clinice: ciornă vs. semnate
 
-Notes taken during a visit (see [Starting a Consultation](/video-consultations/starting-a-call)) remain editable **drafts** until a provider clicks **Sign & Lock**. Signed notes:
+Notele luate în timpul unei vizite (vezi [Începerea unei consultații](/video-consultations/starting-a-call)) rămân editabile, în stare de **ciornă**, până când medicul apasă **Semnează și blochează**. Notele semnate:
 
-- Become read-only (edits require an addendum, which is timestamped and appended rather than replacing the original text).
-- Are included if the patient requests a records export.
-- Count toward the mandatory documentation your state's telehealth regulations may require to be finalized within a set number of days of the visit — SuperMed shows a reminder banner on any draft note older than 5 days.
+- Devin needitabile (modificările necesită un addendum, care este atașat cu marcaj temporal, nu înlocuiește textul original).
+- Sunt incluse dacă pacientul solicită un export al fișei.
+- Contează pentru documentația obligatorie pe care reglementările privind telemedicina din regiunea ta le pot impune să fie finalizată într-un anumit număr de zile de la vizită — DemoMed afișează un banner de avertizare pentru orice notă ciornă mai veche de 5 zile.
 
-## Merging duplicate patients
+## Combinarea fișelor duplicate
 
-If two records are created for the same person (e.g. a returning patient who booked with a slightly different email), an **Owner** or **Provider** can merge them from **Patients → [patient] → Merge Duplicate**. Merging combines visit history, forms, and documents into a single chart and is **not reversible** — SuperMed shows a side-by-side comparison and requires typing "MERGE" to confirm.
+Dacă sunt create două fișe pentru aceeași persoană (de ex. un pacient care revine și s-a programat cu un email ușor diferit), un **Proprietar** sau un **Medic** le poate combina din **Pacienți → [pacient] → Combină duplicat**. Combinarea unește istoricul vizitelor, formularele și documentele într-o singură fișă și **nu poate fi anulată** — DemoMed afișează o comparație una lângă alta și cere să tastezi „MERGE” pentru confirmare.
 
-## Sharing a chart with another provider
+## Partajarea unei fișe cu alt medic
 
-For clinics with multiple providers, a chart can be explicitly shared with a colleague (e.g. for a covering physician) via **Patient → Share Access**, which grants time-limited or standing view access without changing the patient's assigned primary provider.
+Pentru clinicile cu mai mulți medici, o fișă poate fi partajată explicit cu un coleg (de ex. pentru un medic care preia temporar cazurile) prin **Pacient → Partajează acces**, ceea ce acordă acces de vizualizare limitat în timp sau permanent, fără a schimba medicul principal alocat pacientului.
 
-## Patient-requested records export
+## Exportul fișei la cererea pacientului
 
-Patients can request a full export of their record from their own patient portal (**My Health → Request My Records**), which generates a PDF of notes, forms, and visit summaries within 24 hours, consistent with standard patient right-of-access requirements. Providers can also trigger this on a patient's behalf from **Patient → Export Records**.
+Pacienții pot solicita un export complet al fișei lor din propriul portal de pacient (**Sănătatea mea → Solicită fișa mea**), care generează un PDF cu notele, formularele și rezumatele vizitelor în 24 de ore, în conformitate cu cerințele standard privind dreptul de acces al pacientului. Medicii pot declanșa acest lucru și în numele pacientului, din **Pacient → Exportă fișa**.

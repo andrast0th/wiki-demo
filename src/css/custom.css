@@ -1,12 +1,10 @@
 /**
- * SuperMed-inspired theme: dark navy/near-black background, blue → cyan
- * gradient accents, Inter type, pill badges and soft-glow cards — modeled
- * on the visual style of supermed.ro. This site is unofficial and not
- * affiliated with or endorsed by SuperMed.
+ * DemoMed theme: dark navy/near-black background, blue → cyan gradient
+ * accents, Inter type, pill badges and soft-glow cards.
  */
 
 :root {
-  /* Brand palette, lifted from supermed.ro's computed styles */
+  /* Brand palette */
   --sm-bg: #0b0f14;
   --sm-bg-elevated: #0e1626;
   --sm-bg-elevated-solid: #101a2c;
@@ -57,7 +55,7 @@
   --pagefind-ui-border-radius: 10px;
 }
 
-/* This site renders in dark mode only (SuperMed has no light theme), see
+/* This site renders in dark mode only (DemoMed has no light theme), see
    colorMode.disableSwitch in docusaurus.config.js. */
 [data-theme='dark'] {
   --ifm-background-color: var(--sm-bg);

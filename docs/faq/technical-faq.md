@@ -2,50 +2,50 @@
 sidebar_position: 2
 ---
 
-# Technical FAQ
+# Întrebări frecvente tehnice
 
-### Camera/microphone permission was denied — how do I fix it? \{#permission-denied}
+### Permisiunea pentru cameră/microfon a fost refuzată — cum o repar? \{#permission-denied}
 
-Browser permissions, once denied, aren't re-prompted automatically. Re-enable manually:
+Odată refuzate, permisiunile browserului nu mai sunt solicitate din nou automat. Reactivează-le manual:
 
-- **Chrome/Edge:** click the padlock icon in the address bar → Site settings → set Camera and Microphone to "Allow" → reload the page.
-- **Safari:** Safari menu → Settings → Websites → Camera/Microphone → find the SuperMed domain → set to "Allow."
-- **Firefox:** click the padlock icon → Connection secure → More information → Permissions → clear the blocked setting → reload.
+- **Chrome/Edge:** dă clic pe iconița lacăt din bara de adrese → Setările site-ului → setează Camera și Microfonul pe „Permite” → reîncarcă pagina.
+- **Safari:** meniul Safari → Setări → Site-uri web → Cameră/Microfon → găsește domeniul DemoMed → setează pe „Permite”.
+- **Firefox:** dă clic pe iconița lacăt → Conexiune securizată → Mai multe informații → Permisiuni → șterge setarea blocată → reîncarcă.
 
-After changing browser settings, re-run the check at **Settings → Video → Device Check** ([Video & Audio Device Setup](/video-consultations/device-setup)) to confirm it's picked up correctly.
+După ce ai schimbat setările browserului, rulează din nou verificarea din **Setări → Video → Verificare dispozitive** ([Configurarea dispozitivelor video și audio](/video-consultations/device-setup)) pentru a confirma că totul funcționează corect.
 
-### My video keeps freezing or dropping mid-visit \{#choppy-video}
+### Imaginea video îmi îngheață sau se întrerupe în timpul vizitei \{#choppy-video}
 
-This is almost always a bandwidth issue rather than a SuperMed outage. Try, in order:
+Aproape întotdeauna este o problemă de lățime de bandă, nu o pană a DemoMed. Încearcă, în ordine:
 
-1. Enable **Low Bandwidth Mode** from the in-call settings menu (caps video at 360p, prioritizes audio).
-2. Switch from Wi-Fi to a wired ethernet connection if possible.
-3. Close other bandwidth-heavy applications (video streaming, large file uploads/downloads, cloud backups running in the background).
-4. Ask the other participant to also try Low Bandwidth Mode — a poor connection on *either* side degrades the call for both.
-5. Run **Settings → Video → Device Check** to confirm your current measured speed against the recommended 10 Mbps.
+1. Activează **Modul de lățime de bandă redusă** din meniul de setări al apelului (limitează video-ul la 360p, prioritizează audio-ul).
+2. Trece de la Wi-Fi la o conexiune prin cablu Ethernet, dacă este posibil.
+3. Închide alte aplicații care consumă multă lățime de bandă (streaming video, încărcări/descărcări de fișiere mari, backup-uri cloud rulate în fundal).
+4. Roagă și celălalt participant să încerce Modul de lățime de bandă redusă — o conexiune slabă pe *oricare* dintre părți afectează apelul pentru amândoi.
+5. Rulează **Setări → Video → Verificare dispozitive** pentru a confirma viteza ta măsurată în raport cu cei 10 Mbps recomandați.
 
-If problems persist across multiple visits from the same location, it may be worth having your office internet connection assessed — SuperMed's minimum bandwidth recommendations assume no other heavy usage sharing the same connection during visits.
+Dacă problemele persistă la mai multe vizite din aceeași locație, ar putea merita să verifici conexiunea de internet a cabinetului — recomandările minime de lățime de bandă ale DemoMed presupun că nicio altă utilizare intensă nu partajează aceeași conexiune în timpul vizitelor.
 
-### Can I use SuperMed with a second monitor?
+### Pot folosi DemoMed cu un al doilea monitor?
 
-Yes — nothing in SuperMed restricts multi-monitor setups. A common configuration is the video visit on one screen and the patient's chart/clinical notes on the other, opened as separate browser windows.
+Da — nimic din DemoMed nu restricționează configurațiile cu mai multe monitoare. O configurație obișnuită este vizita video pe un ecran și fișa/notele clinice ale pacientului pe celălalt, deschise ca ferestre separate de browser.
 
-### What browsers are supported?
+### Ce browsere sunt suportate?
 
-Chrome 100+, Edge 100+, Safari 16+, and Firefox 100+ (latest stable versions recommended). Internet Explorer is not supported. Mobile Safari (iOS) and Chrome for Android are supported for patients and providers alike.
+Chrome 100+, Edge 100+, Safari 16+ și Firefox 100+ (se recomandă cele mai recente versiuni stabile). Internet Explorer nu este suportat. Safari pe mobil (iOS) și Chrome pentru Android sunt suportate atât pentru pacienți, cât și pentru medici.
 
-### Can patients join without a strong internet connection?
+### Pacienții se pot alătura fără o conexiune puternică la internet?
 
-Patients can join over cellular data if Wi-Fi isn't available; SuperMed's Low Bandwidth Mode (see above) helps significantly on constrained mobile connections. There is currently no audio-only "dial-in by phone" fallback — if a patient truly cannot get a working video connection, the visit will need to be converted to a phone call outside SuperMed or rescheduled.
+Pacienții se pot alătura prin date mobile, dacă Wi-Fi nu este disponibil; Modul de lățime de bandă redusă al DemoMed (vezi mai sus) ajută semnificativ pe conexiuni mobile limitate. Momentan nu există o variantă de rezervă „apel telefonic doar-audio” — dacă un pacient chiar nu poate obține o conexiune video funcțională, vizita va trebui convertită într-un apel telefonic în afara DemoMed sau reprogramată.
 
-### How do I set up a custom notification domain? \{#custom-domains}
+### Cum configurez un domeniu personalizat pentru notificări? \{#custom-domains}
 
-Available on the Practice plan and above. Go to **Settings → Clinic Profile → Branding → Email Domain**, enter your domain (e.g. `riversidefamilyhealth.com`), and add the provided SPF, DKIM, and CNAME DNS records at your domain registrar. Verification typically completes within a few hours of the DNS records propagating, and the page shows real-time status for each record.
+Disponibil de la planul Practice în sus. Accesează **Setări → Profilul clinicii → Branding → Domeniu de email**, introdu domeniul tău (de ex. `riversidefamilyhealth.com`) și adaugă înregistrările DNS SPF, DKIM și CNAME furnizate, la registratorul tău de domeniu. Verificarea se finalizează de obicei în câteva ore de la propagarea înregistrărilor DNS, iar pagina afișează statusul în timp real pentru fiecare înregistrare.
 
-### Why can't I delete a patient record?
+### De ce nu pot șterge o fișă de pacient?
 
-Clinical records are subject to mandatory retention requirements and can't be deleted on demand — see [Data Retention](/security-compliance/data-retention#requesting-patient-record-deletion) for what can be restricted versus what must be retained, and why.
+Fișele clinice sunt supuse unor cerințe obligatorii de retenție și nu pot fi șterse la cerere — vezi [Retenția datelor](/security-compliance/data-retention#requesting-patient-record-deletion) pentru ce poate fi restricționat față de ce trebuie păstrat, și de ce.
 
-### Does SuperMed have an API?
+### DemoMed are un API?
 
-A REST API for appointments, patient records, and billing is available on the Practice and Network plans for clinics integrating with an external EHR or practice management system. Request API access and view documentation from **Settings → Developer → API Access**.
+Un API REST pentru programări, fișe de pacient și facturare este disponibil pe planurile Practice și Network, pentru clinicile care se integrează cu un sistem extern de fișă medicală electronică (EHR) sau de gestiune a cabinetului. Solicită acces la API și consultă documentația din **Setări → Dezvoltatori → Acces API**.

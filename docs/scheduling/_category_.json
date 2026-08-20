@@ -1,8 +1,8 @@
 {
-  "label": "Scheduling",
+  "label": "Programări",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Configure provider availability, appointment types, and patient self-booking."
+    "description": "Configurează disponibilitatea medicului, tipurile de programări și auto-programarea pacienților."
   }
 }

@@ -1,8 +1,8 @@
 {
-  "label": "FAQ",
+  "label": "Întrebări frecvente",
   "position": 8,
   "link": {
     "type": "generated-index",
-    "description": "Quick answers to common questions about SuperMed."
+    "description": "Răspunsuri rapide la întrebările frecvente despre DemoMed."
   }
 }

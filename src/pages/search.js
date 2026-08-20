@@ -128,7 +128,7 @@ export default function SearchPage() {
   const title = translate({id: 'search.meta.title', message: 'Search'});
   const description = translate({
     id: 'search.meta.description',
-    message: 'Search the SuperMed Help Center',
+    message: 'Search the DemoMed Help Center',
   });
   return (
     <Layout title={title} description={description}>
@@ -140,7 +140,7 @@ export default function SearchPage() {
             </Heading>
             <p>
               <Translate id="search.description">
-                Search across all SuperMed documentation and FAQs.
+                Search across all DemoMed documentation and FAQs.
               </Translate>
             </p>
             <BrowserOnly

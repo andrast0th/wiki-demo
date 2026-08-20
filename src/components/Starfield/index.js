@@ -1,9 +1,8 @@
 import {useEffect, useRef} from 'react';
 import styles from './styles.module.css';
 
-// Small canvas starfield, styled after the twinkling background on
-// supermed.ro's landing page. Purely decorative — respects
-// prefers-reduced-motion by rendering a static frame.
+// Small canvas starfield behind the homepage hero. Purely decorative —
+// respects prefers-reduced-motion by rendering a static frame.
 export default function Starfield() {
   const canvasRef = useRef(null);
 

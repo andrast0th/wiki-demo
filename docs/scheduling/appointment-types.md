@@ -2,38 +2,38 @@
 sidebar_position: 2
 ---
 
-# Appointment Types
+# Tipuri de programări
 
-Appointment types control visit length, which intake form is sent, and what shows up on the patient booking page.
+Tipurile de programări controlează durata vizitei, ce formular de admisie este trimis și ce apare pe pagina de rezervare a pacienților.
 
-## Creating an appointment type
+## Crearea unui tip de programare
 
-From **Schedule → Appointment Types → New**, configure:
+Din **Agendă → Tipuri de programări → Nou**, configurează:
 
-- **Name** — shown to patients (e.g. "New Patient Visit", "Follow-up", "Medication Review").
-- **Duration** — in 5-minute increments, 10–120 minutes.
-- **Intake form** — which form (if any) is auto-sent when this type is booked. See [Digital Intake Forms](/patient-management/intake-forms).
-- **Visibility** — whether patients can self-book this type, or whether it's staff-only (e.g. for urgent same-day slots front desk schedules manually).
-- **Price / billing code** — optional, used for self-pay invoicing and superbill generation. See [Payments & Invoicing](/billing/payments-invoicing).
+- **Nume** — afișat pacienților (de ex. „Vizită pacient nou”, „Control”, „Revizuire tratament”).
+- **Durată** — în trepte de 5 minute, între 10 și 120 de minute.
+- **Formular de admisie** — ce formular (dacă este cazul) se trimite automat când este rezervat acest tip. Vezi [Formulare digitale de admisie](/patient-management/intake-forms).
+- **Vizibilitate** — dacă pacienții se pot programa singuri pentru acest tip, sau dacă este disponibil doar pentru personal (de ex. pentru intervale urgente în aceeași zi, programate manual de recepție).
+- **Preț / cod de facturare** — opțional, folosit pentru facturarea plăților directe și generarea de superbill-uri. Vezi [Plăți și facturare](/billing/payments-invoicing).
 
-## Example setup
+## Exemplu de configurare
 
-Dr. Osei configures three appointment types for Riverside Family Health:
+Dr. Osei configurează trei tipuri de programări pentru Riverside Family Health:
 
-| Type | Duration | Intake form | Self-bookable |
+| Tip | Durată | Formular de admisie | Auto-programabil |
 |---|---|---|---|
-| New Patient Visit | 45 min | Full intake + insurance | Yes |
-| Follow-up | 20 min | Symptom check-in only | Yes |
-| Urgent Same-Day | 15 min | None | No (front desk only) |
+| Vizită pacient nou | 45 min | Admisie completă + asigurare | Da |
+| Control | 20 min | Doar verificare simptome | Da |
+| Urgență în aceeași zi | 15 min | Niciunul | Nu (doar recepția) |
 
-## Requiring a minimum booking notice
+## Impunerea unui preaviz minim de rezervare
 
-Under **Schedule → Appointment Types → [type] → Booking Rules**, set a minimum lead time (e.g. "patients must book at least 2 hours in advance") to avoid last-minute bookings you can't realistically prepare for, and a maximum booking window (e.g. "no more than 60 days out") to keep the calendar from filling with far-future placeholder appointments.
+Din **Agendă → Tipuri de programări → [tip] → Reguli de rezervare**, setează un termen minim de anunț (de ex. „pacienții trebuie să facă programarea cu cel puțin 2 ore înainte”) pentru a evita programările de ultim moment pe care nu le poți pregăti realist, precum și o fereastră maximă de rezervare (de ex. „nu mai mult de 60 de zile în avans”) pentru a evita ca agenda să se umple cu programări-placeholder în viitor îndepărtat.
 
-## Cancellation policy per type
+## Politica de anulare per tip \{#cancellation-policy-per-type}
 
-Each appointment type can have its own cancellation window (e.g. "must cancel at least 24 hours ahead to avoid a fee"). This is display-only unless you've also connected a payment method under **Billing → Payment Settings**, in which case a configured no-show fee is automatically charged for late cancellations. See [Insurance & Payment Setup](/billing/insurance-setup).
+Fiecare tip de programare poate avea propria fereastră de anulare (de ex. „trebuie anulat cu cel puțin 24 de ore înainte, pentru a evita o taxă”). Aceasta este doar informativă, cu excepția cazului în care ai conectat și o metodă de plată din **Facturare → Setări de plată**, caz în care o taxă de absență configurată este percepută automat pentru anulările tardive. Vezi [Configurarea asigurării și plăților](/billing/insurance-setup).
 
-## Reordering and archiving
+## Reordonare și arhivare
 
-Drag to reorder appointment types — the order shown here matches the order patients see on the booking page. Archiving (rather than deleting) a type keeps historical appointments of that type intact in reporting while removing it from future booking.
+Trage pentru a reordona tipurile de programări — ordinea afișată aici corespunde ordinii pe care o văd pacienții pe pagina de rezervare. Arhivarea (în loc de ștergere) a unui tip păstrează intacte programările istorice de acel tip în rapoarte, eliminându-l în același timp din rezervările viitoare.

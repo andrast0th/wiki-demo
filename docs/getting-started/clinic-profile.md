@@ -2,48 +2,48 @@
 sidebar_position: 2
 ---
 
-# Setting Up Your Clinic Profile
+# Configurarea profilului clinicii
 
-Your clinic profile controls what patients see when they receive appointment confirmations, visit reminder links, and invoices from SuperMed.
+Profilul clinicii tale controlează ce văd pacienții atunci când primesc confirmări de programare, linkuri de reamintire pentru vizite și facturi de la DemoMed.
 
-## Basic information
+## Informații de bază
 
-Navigate to **Settings → Clinic Profile** and fill in:
+Accesează **Setări → Profilul clinicii** și completează:
 
-- **Clinic name** — appears in emails, SMS reminders, and the patient-facing booking page (e.g. "Riverside Family Health").
-- **Specialty** — used to tailor default intake form templates. Dr. Osei selects **Family Medicine**.
-- **Time zone** — all appointment times, availability windows, and calendar exports use this setting. Get this right before you configure availability; changing it later shifts all future (not past) appointments to the new time zone.
-- **Contact phone & address** — shown on invoices and used as the fallback contact number if a video call fails.
+- **Numele clinicii** — apare în emailuri, remindere SMS și pagina de rezervare vizibilă pacienților (de ex. „Riverside Family Health”).
+- **Specialitatea** — folosită pentru a adapta șabloanele implicite de formulare de admisie. Dr. Osei alege **Medicină de familie**.
+- **Fusul orar** — toate orele programărilor, intervalele de disponibilitate și exporturile de calendar folosesc această setare. Configurează-o corect înainte de a-ți seta disponibilitatea; modificarea ei ulterioară mută toate programările viitoare (nu și pe cele trecute) în noul fus orar.
+- **Telefon și adresă de contact** — apar pe facturi și sunt folosite ca număr de contact alternativ dacă un apel video eșuează.
 
-## Branding
+## Identitate vizuală (branding)
 
-Under **Settings → Clinic Profile → Branding**, you can upload:
+Din **Setări → Profilul clinicii → Branding**, poți încărca:
 
-- A clinic logo (SVG or PNG, transparent background recommended, max 2 MB) shown on the patient booking page and in the video waiting room.
-- A primary brand color, used for buttons on the patient-facing booking page.
-- A custom "from" name for email notifications (e.g. "Riverside Family Health" instead of the default "SuperMed Notifications").
+- Un logo al clinicii (SVG sau PNG, se recomandă fundal transparent, maximum 2 MB), afișat pe pagina de rezervare a pacienților și în sala de așteptare video.
+- O culoare principală de brand, folosită pentru butoanele din pagina de rezervare vizibilă pacienților.
+- Un nume personalizat de „expeditor” pentru notificările prin email (de ex. „Riverside Family Health” în loc de numele implicit „DemoMed Notifications”).
 
 :::info
-Custom email sending domains (so reminders come from `@riversidefamilyhealth.com` instead of `@supermed.example`) require the **Practice** plan or higher and DNS verification. See [Custom notification domains](/faq/technical-faq#custom-domains).
+Domeniile personalizate de trimitere a emailurilor (astfel încât reamintirile să vină de la `@riversidefamilyhealth.com` în loc de `@demomed.example`) necesită planul **Practice** sau superior și verificare DNS. Vezi [Domenii personalizate de notificare](/faq/technical-faq#custom-domains).
 :::
 
-## Business hours
+## Program de lucru
 
-Set the hours your clinic is generally open under **Settings → Clinic Profile → Business Hours**. This does *not* control when patients can book appointments — that's handled per-provider in [Setting Your Availability](/scheduling/availability) — but it does control:
+Setează orele în care clinica ta este în general deschisă din **Setări → Profilul clinicii → Program de lucru**. Această setare *nu* controlează când pot pacienții să facă programări — asta se gestionează per medic în [Setarea disponibilității tale](/scheduling/availability) — dar controlează:
 
-- When the automated phone/chat support widget shows "we're currently open" vs. "leave a message."
-- The default range shown on the patient booking calendar before a specific provider is selected.
+- Când widget-ul automat de telefon/chat afișează „suntem deschiși acum” sau „lasă un mesaj”.
+- Intervalul implicit afișat în calendarul de rezervare al pacienților înainte de selectarea unui medic anume.
 
-## Locations
+## Locații \{#locations}
 
-If your clinic operates from more than one physical address (or you split time between an office and a home-based telehealth setup), add each as a **Location** under **Settings → Clinic Profile → Locations**. Each location can have:
+Dacă clinica ta funcționează din mai multe adrese fizice (sau îți împarți timpul între un cabinet și o configurație de telemedicină de acasă), adaugă fiecare adresă ca **Locație** din **Setări → Profilul clinicii → Locații**. Fiecare locație poate avea:
 
-- Its own address and phone number, shown on visit summaries for in-person follow-ups.
-- Its own set of assigned providers.
-- An optional "virtual-only" flag, which hides the address from patients entirely and shows only "Telehealth Visit."
+- Propria adresă și propriul număr de telefon, afișate în rezumatele vizitelor pentru urmăriri în persoană.
+- Propriul set de medici alocați.
+- Un marcaj opțional „doar virtual”, care ascunde complet adresa față de pacienți și afișează doar „Vizită telemedicină”.
 
-Dr. Osei adds a single virtual-only location called "Riverside Telehealth" since Riverside Family Health does not see patients in person.
+Dr. Osei adaugă o singură locație doar-virtuală numită „Riverside Telehealth”, deoarece Riverside Family Health nu primește pacienți în persoană.
 
-## Next steps
+## Pașii următori
 
-With your profile configured, continue to [Inviting Staff & Setting Roles](/getting-started/inviting-staff).
+După ce ți-ai configurat profilul, continuă cu [Invitarea personalului și setarea rolurilor](/getting-started/inviting-staff).

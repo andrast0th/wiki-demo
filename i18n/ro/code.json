@@ -342,7 +342,7 @@
     "message": "Centru de Asistență"
   },
   "homepage.subtitle": {
-    "message": "Documentație și întrebări frecvente pentru administrarea clinicii tale pe SuperMed"
+    "message": "Documentație și întrebări frecvente pentru administrarea clinicii tale pe DemoMed"
   },
   "homepage.cta.browseDocs": {
     "message": "Vezi documentația"
@@ -354,7 +354,7 @@
     "message": "Acasă"
   },
   "homepage.meta.description": {
-    "message": "Documentație și întrebări frecvente pentru clinici care organizează consultații video pe SuperMed."
+    "message": "Documentație și întrebări frecvente pentru clinici care organizează consultații video pe DemoMed."
   },
   "search.loading": {
     "message": "Se încarcă indexul de căutare…"
@@ -366,13 +366,13 @@
     "message": "Căutare"
   },
   "search.meta.description": {
-    "message": "Caută în Centrul de Asistență SuperMed"
+    "message": "Caută în Centrul de Asistență DemoMed"
   },
   "search.heading": {
     "message": "Căutare"
   },
   "search.description": {
-    "message": "Caută în toată documentația și întrebările frecvente SuperMed."
+    "message": "Caută în toată documentația și întrebările frecvente DemoMed."
   },
   "search.loadingFallback": {
     "message": "Se încarcă căutarea…"

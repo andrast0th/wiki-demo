@@ -45,14 +45,14 @@ function HomepageHeader() {
           <Translate id="homepage.badge">UNOFFICIAL DEMO WIKI</Translate>
         </div>
         <Heading as="h1" className={styles.title}>
-          <span>SuperMed</span>
+          <span>DemoMed</span>
           <span className={styles.titleGradient}>
             <Translate id="homepage.title.helpCenter">Help Center</Translate>
           </span>
         </Heading>
         <p className={styles.subtitle}>
           <Translate id="homepage.subtitle">
-            Documentation and FAQs for running your clinic on SuperMed
+            Documentation and FAQs for running your clinic on DemoMed
           </Translate>
         </p>
         <div className={styles.buttons}>
@@ -87,7 +87,7 @@ export default function Home() {
   const description = translate({
     id: 'homepage.meta.description',
     message:
-      'Documentation and FAQs for clinics running video consultations on SuperMed.',
+      'Documentation and FAQs for clinics running video consultations on DemoMed.',
   });
   return (
     <Layout title={title} description={description}>

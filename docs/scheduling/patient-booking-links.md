@@ -2,52 +2,52 @@
 sidebar_position: 3
 ---
 
-# Patient Booking Links
+# Linkuri de rezervare pentru pacienți
 
-Every SuperMed clinic and provider gets a shareable booking link where patients can view availability and self-schedule, without needing a SuperMed account.
+Fiecare clinică și fiecare medic din DemoMed primește un link de rezervare care poate fi distribuit, unde pacienții pot vedea disponibilitatea și se pot programa singuri, fără să aibă nevoie de un cont DemoMed.
 
-## Finding your link
+## Găsirea linkului tău
 
-- **Clinic-wide link:** `https://book.supermed.example/riverside-family-health`
-- **Provider-specific link:** `https://book.supermed.example/riverside-family-health/dr-osei`
+- **Link general al clinicii:** `https://book.demomed.example/riverside-family-health`
+- **Link specific medicului:** `https://book.demomed.example/riverside-family-health/dr-osei`
 
-Both are available under **Schedule → Booking Links**, along with a QR code version suitable for printing on a business card or clinic signage.
+Ambele sunt disponibile din **Agendă → Linkuri de rezervare**, alături de o versiune cu cod QR potrivită pentru tipărire pe o carte de vizită sau pe semnalizarea clinicii.
 
-## Embedding on your own website
+## Integrarea pe propriul site
 
-If your clinic has an existing website, embed the booking widget with a copy-paste snippet from **Schedule → Booking Links → Embed**:
+Dacă clinica ta are deja un site, integrează widget-ul de rezervare cu un fragment de cod gata de copiat din **Agendă → Linkuri de rezervare → Integrare**:
 
 ```html
 <iframe
-  src="https://book.supermed.example/riverside-family-health?embed=true"
+  src="https://book.demomed.example/riverside-family-health?embed=true"
   width="100%"
   height="700"
   frameborder="0">
 </iframe>
 ```
 
-The `embed=true` parameter removes SuperMed's header/footer chrome so the widget blends into your site.
+Parametrul `embed=true` elimină antetul/subsolul DemoMed, astfel încât widget-ul se integrează vizual în site-ul tău.
 
-## What patients see
+## Ce văd pacienții
 
-1. Select an appointment type (only self-bookable types appear — see [Appointment Types](/scheduling/appointment-types)).
-2. Choose a date and time from available slots.
-3. Enter their name, date of birth, email, and phone number, or log into an existing SuperMed patient account.
-4. Complete or defer the linked intake form.
-5. Receive a confirmation email/SMS with the video visit link, added automatically to their calendar via an attached `.ics` file.
+1. Selectează un tip de programare (apar doar tipurile auto-programabile — vezi [Tipuri de programări](/scheduling/appointment-types)).
+2. Aleg o dată și o oră dintre intervalele disponibile.
+3. Introduc numele, data nașterii, emailul și numărul de telefon, sau se autentifică într-un cont de pacient DemoMed existent.
+4. Completează sau amână formularul de admisie asociat.
+5. Primesc un email/SMS de confirmare cu linkul vizitei video, adăugat automat în calendarul lor printr-un fișier `.ics` atașat.
 
-## New vs. returning patients
+## Pacienți noi vs. pacienți existenți
 
-The booking flow automatically detects returning patients by matching email + date of birth against existing records, and pre-fills their information rather than asking them to re-enter it. If a match can't be made confidently, SuperMed creates a new patient record and flags it for front-desk review to check for accidental duplicates.
+Fluxul de rezervare detectează automat pacienții existenți, potrivind emailul și data nașterii cu fișele deja existente, și le pre-completează informațiile în loc să le ceară să le reintroducă. Dacă nu se poate face o potrivire sigură, DemoMed creează o fișă nouă de pacient și o marchează pentru verificare de către recepție, pentru a depista eventuale duplicate accidentale.
 
-## Restricting who can book
+## Restricționarea cine se poate programa
 
-Under **Schedule → Booking Links → Restrictions**, you can require:
+Din **Agendă → Linkuri de rezervare → Restricții**, poți impune:
 
-- **State restriction** — only allow booking from patients physically located in states where the provider is licensed (uses the patient's stated address; SuperMed does not geofence by IP for this).
-- **Existing patient only** — hides self-booking for new patients entirely, useful for specialty practices that only accept referrals.
-- **Approval required** — new-patient bookings are held as "Requested" until a staff member confirms, rather than instantly confirming the slot.
+- **Restricție de stat/regiune** — permite rezervarea doar pacienților aflați fizic în regiunile în care medicul este licențiat (folosește adresa declarată de pacient; DemoMed nu face geo-blocare după IP pentru această funcție).
+- **Doar pacienți existenți** — ascunde complet auto-programarea pentru pacienți noi, util pentru cabinete de specialitate care acceptă doar pacienți trimiși prin recomandare.
+- **Aprobare necesară** — programările pacienților noi rămân în starea „Solicitat” până când un membru al personalului le confirmă, în loc să confirme instant intervalul.
 
-## Disabling self-booking temporarily
+## Dezactivarea temporară a auto-programării
 
-Toggle **Pause Online Booking** under **Schedule → Booking Links** to immediately hide the booking page (visitors see a "currently not accepting online bookings" message) without deleting your configured availability — useful when a provider is out unexpectedly and you'd rather have front desk handle rescheduling by phone.
+Comută opțiunea **Pauzează programările online** din **Agendă → Linkuri de rezervare** pentru a ascunde imediat pagina de rezervare (vizitatorii văd mesajul „momentan nu acceptăm programări online”) fără să ștergi disponibilitatea configurată — util atunci când un medic lipsește neașteptat și preferi ca recepția să gestioneze reprogramările telefonic.
