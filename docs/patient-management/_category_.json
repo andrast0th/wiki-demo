@@ -1,0 +1,8 @@
+{
+  "label": "Patient Management",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Intake forms, patient records, and e-prescriptions."
+  }
+}

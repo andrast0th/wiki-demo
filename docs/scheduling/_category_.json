@@ -1,0 +1,8 @@
+{
+  "label": "Scheduling",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Configure provider availability, appointment types, and patient self-booking."
+  }
+}

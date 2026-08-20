@@ -1,0 +1,42 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* VirtuCare brand palette — a clinical blue instead of Docusaurus's default green. */
+:root {
+  --ifm-color-primary: #0f6fb0;
+  --ifm-color-primary-dark: #0d649e;
+  --ifm-color-primary-darker: #0c5f95;
+  --ifm-color-primary-darkest: #0a4e7a;
+  --ifm-color-primary-light: #117ac2;
+  --ifm-color-primary-lighter: #1280cb;
+  --ifm-color-primary-lightest: #1a91e0;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Pagefind UI theming, see src/pages/search.js */
+  --pagefind-ui-primary: var(--ifm-color-primary);
+  --pagefind-ui-text: var(--ifm-font-color-base);
+  --pagefind-ui-background: var(--ifm-background-color);
+  --pagefind-ui-border: var(--ifm-color-emphasis-300);
+  --pagefind-ui-tag: var(--ifm-color-emphasis-200);
+  --pagefind-ui-font: var(--ifm-font-family-base);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #4db8f0;
+  --ifm-color-primary-dark: #29aaec;
+  --ifm-color-primary-darker: #17a3eb;
+  --ifm-color-primary-darkest: #0e86c6;
+  --ifm-color-primary-light: #67c6f2;
+  --ifm-color-primary-lighter: #75ccf4;
+  --ifm-color-primary-lightest: #a1dcf7;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+#pagefind-search .pagefind-ui__form {
+  margin-bottom: 1rem;
+}

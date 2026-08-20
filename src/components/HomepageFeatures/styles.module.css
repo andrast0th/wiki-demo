@@ -1,0 +1,27 @@
+.features {
+  display: flex;
+  align-items: stretch;
+  padding: 2rem 0 3rem;
+  width: 100%;
+}
+
+.featureCard {
+  display: block;
+  height: 100%;
+  padding: 1.5rem 1rem;
+  border-radius: var(--ifm-global-radius);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease;
+}
+
+.featureCard:hover {
+  background-color: var(--ifm-hover-overlay, rgba(0, 0, 0, 0.05));
+  text-decoration: none;
+  color: inherit;
+}
+
+.featureEmoji {
+  font-size: 4rem;
+  line-height: 1;
+}
