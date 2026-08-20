@@ -128,11 +128,20 @@ export default function NavbarSearchBar() {
     history.push(toDocusaurusRoute(url));
   }
 
+  // siteConfig.baseUrl is locale-scoped (e.g. "/wiki-demo/en/" on the
+  // English build) — exactly what a same-site route like /search needs.
+  // history.push() does NOT add this itself (unlike Docusaurus's own
+  // <Link>, which resolves it internally before pushing); pushing a bare
+  // "/search" 404s because it's missing the site's baseUrl entirely.
+  function searchPageUrl(q) {
+    return `${siteConfig.baseUrl}search?q=${encodeURIComponent(q)}`;
+  }
+
   function onSubmit(e) {
     e.preventDefault();
     if (!query.trim()) return;
     setOpen(false);
-    history.push(`/search?q=${encodeURIComponent(query.trim())}`);
+    history.push(searchPageUrl(query.trim()));
   }
 
   return (
@@ -195,7 +204,7 @@ export default function NavbarSearchBar() {
                 className={styles.seeAll}
                 onClick={() => {
                   setOpen(false);
-                  history.push(`/search?q=${encodeURIComponent(query.trim())}`);
+                  history.push(searchPageUrl(query.trim()));
                 }}>
                 {seeAllLabel} →
               </button>
