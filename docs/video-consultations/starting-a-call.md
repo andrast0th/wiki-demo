@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## From the provider dashboard
 
-1. Go to **Today's Schedule** on your VirtuCare dashboard.
+1. Go to **Today's Schedule** on your SuperMed dashboard.
 2. Find the appointment and click **Start Visit**. This becomes clickable 15 minutes before the scheduled time.
 3. If the waiting room is enabled (see [Configuring the Waiting Room](/video-consultations/waiting-room)), verify the patient's stated name and date of birth, then click **Admit**.
 4. The visit opens in a new tab with video, audio, chat, and screen-share controls.
@@ -32,7 +32,7 @@ Invited participants receive a unique link by SMS or can be shown a QR code on s
 
 ## Recording a visit
 
-Recording requires **verbal or written consent**, which VirtuCare prompts for automatically — see [Recording & Consent](/video-consultations/recording-consent) for the full policy and how to configure it.
+Recording requires **verbal or written consent**, which SuperMed prompts for automatically — see [Recording & Consent](/video-consultations/recording-consent) for the full policy and how to configure it.
 
 ## Ending a visit
 
@@ -46,4 +46,4 @@ Ending the visit does **not** submit clinical notes as final — notes remain ed
 
 ## If a call drops mid-visit
 
-Either party can simply reopen the original visit link to rejoin — VirtuCare rooms stay open for 30 minutes after the last participant disconnects. See [My video keeps freezing or dropping mid-visit](/faq/technical-faq#choppy-video) if drops happen repeatedly.
+Either party can simply reopen the original visit link to rejoin — SuperMed rooms stay open for 30 minutes after the last participant disconnects. See [My video keeps freezing or dropping mid-visit](/faq/technical-faq#choppy-video) if drops happen repeatedly.

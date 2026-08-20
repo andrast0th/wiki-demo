@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Inviting Staff & Setting Roles
 
-Even a solo practice usually needs at least one additional login — for a medical assistant, front-desk coordinator, or billing contact. VirtuCare uses role-based access so staff only see what they need.
+Even a solo practice usually needs at least one additional login — for a medical assistant, front-desk coordinator, or billing contact. SuperMed uses role-based access so staff only see what they need.
 
 ## Roles overview
 
@@ -29,7 +29,7 @@ Dr. Osei invites her medical assistant, Jordan, as **Front Desk + Billing**, so 
 
 ## Two-factor authentication
 
-Because staff accounts can access PHI, VirtuCare requires two-factor authentication (2FA) for every role except Read-only Auditor once your clinic has more than one active team member. Staff will be prompted to set up 2FA (authenticator app or SMS) on first login.
+Because staff accounts can access PHI, SuperMed requires two-factor authentication (2FA) for every role except Read-only Auditor once your clinic has more than one active team member. Staff will be prompted to set up 2FA (authenticator app or SMS) on first login.
 
 ## Removing or downgrading access
 

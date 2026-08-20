@@ -28,7 +28,7 @@ If insurance billing is configured (see [Insurance & Payment Setup](/billing/ins
 
 ## Entering billing codes
 
-Providers (or billing staff) attach CPT and ICD-10 codes to a visit from the chart's **Billing** tab. VirtuCare suggests commonly paired codes based on the appointment type, but does not auto-select them — codes must be reviewed and confirmed by a provider before a claim is submitted, since only a licensed provider can attest to the codes billed.
+Providers (or billing staff) attach CPT and ICD-10 codes to a visit from the chart's **Billing** tab. SuperMed suggests commonly paired codes based on the appointment type, but does not auto-select them — codes must be reviewed and confirmed by a provider before a claim is submitted, since only a licensed provider can attest to the codes billed.
 
 ## Patient statements
 

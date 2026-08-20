@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Recording & Consent
 
-VirtuCare allows visit recording for clinical documentation, training, or quality-assurance purposes — but only with explicit, logged patient consent, and recording is **off by default**.
+SuperMed allows visit recording for clinical documentation, training, or quality-assurance purposes — but only with explicit, logged patient consent, and recording is **off by default**.
 
 ## Enabling recording for your clinic
 

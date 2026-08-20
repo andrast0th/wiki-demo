@@ -1,29 +1,138 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
   position: relative;
+  padding: 5rem 0 4rem;
+  text-align: center;
   overflow: hidden;
+  background: var(--sm-bg);
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroInner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 5px 16px;
+  border-radius: var(--sm-radius-pill);
+  background: rgba(58, 134, 255, 0.1);
+  border: 1px solid var(--sm-border-strong);
+  color: var(--sm-cyan);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.75rem;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--sm-blue);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--sm-text);
+  margin-bottom: 1.25rem;
+}
+
+.titleGradient {
+  background: var(--sm-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  max-width: 640px;
+  color: var(--sm-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
 }
 
-.searchButton {
-  color: white;
-  border-color: white;
+.arrowLink {
+  font-weight: 700;
+  color: var(--sm-blue);
+  text-decoration: none;
+}
+
+.arrowLink:hover {
+  color: var(--sm-cyan-light);
+  text-decoration: none;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2.5rem;
+  border-radius: var(--sm-radius-pill);
+  background: rgba(14, 22, 38, 0.8);
+  border: 1px solid var(--sm-border);
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.statDivider {
+  width: 1px;
+  height: 28px;
+  background: rgba(76, 201, 240, 0.18);
+}
+
+.statValue {
+  color: var(--sm-cyan);
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.statLabel {
+  color: var(--sm-text-muted);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.1rem;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .statItem {
+    gap: 1rem 1.5rem;
+  }
 }

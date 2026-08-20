@@ -15,11 +15,11 @@ sidebar_position: 2
 | Audit logs | 7 years | No |
 | Billing/invoice records | 7 years | No |
 
-Clinical and billing retention periods are set conservatively to satisfy the longest common state and federal requirements across the jurisdictions VirtuCare operates in — check your own state's medical records retention law if your patients are concentrated in a single state, as some require longer minimums (VirtuCare's defaults will never fall below your state's floor).
+Clinical and billing retention periods are set conservatively to satisfy the longest common state and federal requirements across the jurisdictions SuperMed operates in — check your own state's medical records retention law if your patients are concentrated in a single state, as some require longer minimums (SuperMed's defaults will never fall below your state's floor).
 
 ## Requesting patient record deletion
 
-Patients occasionally ask to have their data deleted. Because clinical records are subject to mandatory retention requirements, VirtuCare **cannot** delete an active patient chart on request in the way a typical consumer app might delete an account. Instead:
+Patients occasionally ask to have their data deleted. Because clinical records are subject to mandatory retention requirements, SuperMed **cannot** delete an active patient chart on request in the way a typical consumer app might delete an account. Instead:
 
 - Non-clinical data (e.g. marketing communication preferences, an unconfirmed account with no visit history) can be deleted.
 - Clinical records can be marked **Restricted**, which hides them from routine staff views and search, while preserving them for the mandatory retention period as required by law. Only an **Owner** can apply or remove a restriction, and doing so is logged in the audit trail.
@@ -30,4 +30,4 @@ Anything scheduled for deletion (e.g. a recording nearing the end of its retenti
 
 ## Closing your clinic account
 
-If you close your VirtuCare account (**Settings → Billing → Close Account**), patient clinical records are retained for the standard periods above even though the account is no longer active, since the retention obligation is tied to the records themselves, not to whether your subscription is current. You can request a full data export before closing — see **Settings → Compliance → Request Data Export**, which generates a downloadable archive within 5 business days.
+If you close your SuperMed account (**Settings → Billing → Close Account**), patient clinical records are retained for the standard periods above even though the account is no longer active, since the retention obligation is tied to the records themselves, not to whether your subscription is current. You can request a full data export before closing — see **Settings → Compliance → Request Data Export**, which generates a downloadable archive within 5 business days.

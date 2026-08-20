@@ -8,7 +8,7 @@ Intake forms collect patient information before a visit — history, current med
 
 ## Using a template
 
-VirtuCare ships with specialty-specific starter templates selected based on the specialty you set in your [clinic profile](/getting-started/clinic-profile). Dr. Osei's **Family Medicine** template includes:
+SuperMed ships with specialty-specific starter templates selected based on the specialty you set in your [clinic profile](/getting-started/clinic-profile). Dr. Osei's **Family Medicine** template includes:
 
 - Demographics & emergency contact
 - Insurance information

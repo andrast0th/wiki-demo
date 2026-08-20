@@ -80,12 +80,12 @@ function PagefindSearch() {
 
 export default function SearchPage() {
   return (
-    <Layout title="Search" description="Search the VirtuCare Help Center">
+    <Layout title="Search" description="Search the SuperMed Help Center">
       <main className="container margin-vert--lg">
         <div className="row">
           <div className="col col--8 col--offset-2">
             <Heading as="h1">Search</Heading>
-            <p>Search across all VirtuCare documentation and FAQs.</p>
+            <p>Search across all SuperMed documentation and FAQs.</p>
             <BrowserOnly fallback={<p>Loading search…</p>}>
               {() => <PagefindSearch />}
             </BrowserOnly>

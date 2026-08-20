@@ -43,15 +43,11 @@ function Feature({emoji, title, description, to}) {
   return (
     <div className={clsx('col col--4')}>
       <Link to={to} className={styles.featureCard}>
-        <div className="text--center">
-          <span className={styles.featureEmoji} role="img" aria-hidden="true">
-            {emoji}
-          </span>
-        </div>
-        <div className="text--center padding-horiz--md">
-          <Heading as="h3">{title}</Heading>
-          <p>{description}</p>
-        </div>
+        <span className={styles.featureIcon} role="img" aria-hidden="true">
+          {emoji}
+        </span>
+        <Heading as="h3">{title}</Heading>
+        <p>{description}</p>
       </Link>
     </div>
   );

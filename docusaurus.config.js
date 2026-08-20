@@ -10,9 +10,34 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'VirtuCare Help Center',
-  tagline: 'Documentation and FAQs for running your clinic on VirtuCare',
-  favicon: 'img/favicon.ico',
+  title: 'SuperMed Help Center',
+  tagline: 'Documentation and FAQs for running your clinic on SuperMed',
+  favicon: 'img/favicon.svg',
+
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: 'anonymous',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap',
+      },
+    },
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -66,12 +91,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'VirtuCare Help Center',
+        title: 'SuperMed Help Center',
         logo: {
-          alt: 'VirtuCare Logo',
+          alt: 'SuperMed Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -115,7 +142,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} VirtuCare, Inc. Built with Docusaurus. (Demo content — VirtuCare is a fictional product.)`,
+        copyright: `Unofficial documentation, built as a demo with Docusaurus + Pagefind — not affiliated with or endorsed by SuperMed. © ${new Date().getFullYear()}`,
       },
       prism: {
         theme: prismThemes.github,

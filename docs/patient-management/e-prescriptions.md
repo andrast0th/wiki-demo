@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # E-Prescriptions
 
-VirtuCare integrates with a certified e-prescribing network to let providers send prescriptions directly to a patient's pharmacy during or after a video visit.
+SuperMed integrates with a certified e-prescribing network to let providers send prescriptions directly to a patient's pharmacy during or after a video visit.
 
 ## Enabling e-prescribing
 
@@ -22,7 +22,7 @@ From the in-visit clinical notes panel (see [Starting a Consultation](/video-con
 
 1. Search the medication database by name.
 2. Select dose, quantity, refills, and directions (SIG).
-3. Choose the patient's pharmacy — VirtuCare pulls previously used pharmacies for that patient, or you can search by name/location.
+3. Choose the patient's pharmacy — SuperMed pulls previously used pharmacies for that patient, or you can search by name/location.
 4. Review and sign. Controlled substances require re-entering your 2FA code at this step even if you're already logged in.
 
 ## Checking prescription status
@@ -31,8 +31,8 @@ Sent prescriptions appear under **Patient → Prescriptions** with a status: **S
 
 ## Medication history and interaction checks
 
-VirtuCare automatically checks new prescriptions against medications already listed in the patient's chart (whether prescribed through VirtuCare or manually entered from the intake form) and flags potential interactions or duplicate therapy before you can sign. These warnings can be acknowledged and overridden with a documented reason, but cannot be silently dismissed.
+SuperMed automatically checks new prescriptions against medications already listed in the patient's chart (whether prescribed through SuperMed or manually entered from the intake form) and flags potential interactions or duplicate therapy before you can sign. These warnings can be acknowledged and overridden with a documented reason, but cannot be silently dismissed.
 
 ## Prescribing across state lines
 
-Because prescribing legality depends on both provider licensure and the patient's physical location at the time of the visit, VirtuCare requires confirming the patient's current state at check-in (pre-filled from their profile, editable if they're traveling) and will block prescribing — with an explanation — if the provider isn't licensed in that state. See [Can I see patients who are located in a different state?](/faq/general-faq#cross-state) for more on multi-state licensure.
+Because prescribing legality depends on both provider licensure and the patient's physical location at the time of the visit, SuperMed requires confirming the patient's current state at check-in (pre-filled from their profile, editable if they're traveling) and will block prescribing — with an explanation — if the provider isn't licensed in that state. See [Can I see patients who are located in a different state?](/faq/general-faq#cross-state) for more on multi-state licensure.

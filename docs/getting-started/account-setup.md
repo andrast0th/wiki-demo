@@ -4,14 +4,14 @@ sidebar_position: 1
 
 # Creating Your Clinic Account
 
-This guide walks Dr. Amara Osei — a family medicine physician opening a solo practice, Riverside Family Health — through creating a VirtuCare account. The same steps apply whether you're a solo provider or setting up VirtuCare for a multi-physician clinic.
+This guide walks Dr. Amara Osei — a family medicine physician opening a solo practice, Riverside Family Health — through creating a SuperMed account. The same steps apply whether you're a solo provider or setting up SuperMed for a multi-physician clinic.
 
 ## 1. Sign up
 
-1. Go to [app.virtucare.example/signup](https://app.virtucare.example/signup).
+1. Go to [app.supermed.example/signup](https://app.supermed.example/signup).
 2. Enter your work email address. Personal email domains (Gmail, Yahoo, etc.) are allowed during trial but must be replaced with a verified organizational domain before you can invite staff.
 3. Choose **I'm setting up a new clinic** rather than **I was invited to join a clinic**.
-4. Set a password that meets VirtuCare's minimum requirements (12+ characters, at least one number and one symbol).
+4. Set a password that meets SuperMed's minimum requirements (12+ characters, at least one number and one symbol).
 5. Verify your email using the six-digit code sent to your inbox. The code expires after 15 minutes.
 
 ## 2. Choose a plan
@@ -26,7 +26,7 @@ Dr. Osei selects **Solo**, since Riverside Family Health has one physician and o
 
 ## 3. Identity verification
 
-Because VirtuCare handles protected health information (PHI) and issues video visit links tied to licensed providers, every clinic owner must complete identity verification before the account is activated for live patient traffic:
+Because SuperMed handles protected health information (PHI) and issues video visit links tied to licensed providers, every clinic owner must complete identity verification before the account is activated for live patient traffic:
 
 - Upload a government-issued photo ID.
 - Upload proof of medical licensure (NPI number is auto-validated against the NPPES registry).

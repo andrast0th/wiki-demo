@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Insurance & Payment Setup
 
-VirtuCare supports both insurance billing (via claims clearinghouse integration) and direct self-pay, and clinics can offer either or both.
+SuperMed supports both insurance billing (via claims clearinghouse integration) and direct self-pay, and clinics can offer either or both.
 
 ## Connecting a clearinghouse
 
-Under **Billing → Insurance → Clearinghouse**, connect your clearinghouse account (VirtuCare supports the major national clearinghouses via a standard EDI 837 connection). You'll need your clinic's:
+Under **Billing → Insurance → Clearinghouse**, connect your clearinghouse account (SuperMed supports the major national clearinghouses via a standard EDI 837 connection). You'll need your clinic's:
 
 - Tax ID (EIN)
 - NPI (organizational, if applicable, in addition to individual provider NPIs)
@@ -29,11 +29,11 @@ Under **Billing → Payment Settings → Self-Pay Rates**, set a flat rate per [
 
 ## Connecting a payment processor
 
-To collect card payments (co-pays, self-pay balances, or no-show fees), connect a payment processor under **Billing → Payment Settings → Payment Processor**. VirtuCare does not store full card numbers — the processor tokenizes card details and VirtuCare only stores the token and card last-4 for reference, in line with PCI DSS requirements.
+To collect card payments (co-pays, self-pay balances, or no-show fees), connect a payment processor under **Billing → Payment Settings → Payment Processor**. SuperMed does not store full card numbers — the processor tokenizes card details and SuperMed only stores the token and card last-4 for reference, in line with PCI DSS requirements.
 
 ## Collecting co-pays
 
-If a patient's insurance plan has a known co-pay amount on file, VirtuCare can prompt for payment either:
+If a patient's insurance plan has a known co-pay amount on file, SuperMed can prompt for payment either:
 
 - **Before the visit** — at the end of the booking/intake flow, or
 - **After the visit** — as a standard invoice once the visit is marked complete.

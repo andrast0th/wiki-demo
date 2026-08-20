@@ -41,7 +41,7 @@ For one-off exceptions — vacation, a conference, a half-day out sick — use *
 In clinics with more than one provider, **Settings → Team** lets you decide whether patients book:
 
 - **Directly with a specific provider** (via that provider's individual booking link), or
-- **With "next available provider"** using a shared clinic booking link, where VirtuCare assigns the earliest matching slot across all providers who offer that appointment type.
+- **With "next available provider"** using a shared clinic booking link, where SuperMed assigns the earliest matching slot across all providers who offer that appointment type.
 
 Riverside Family Health, being a solo practice, uses only the individual provider link — see [Patient Booking Links](/scheduling/patient-booking-links) for how to share it.
 

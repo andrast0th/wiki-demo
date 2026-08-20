@@ -1,27 +1,38 @@
 .features {
   display: flex;
   align-items: stretch;
-  padding: 2rem 0 3rem;
+  padding: 1rem 0 4rem;
   width: 100%;
 }
 
 .featureCard {
   display: block;
   height: 100%;
-  padding: 1.5rem 1rem;
-  border-radius: var(--ifm-global-radius);
+  padding: 26px 26px 22px;
+  border-radius: var(--sm-radius-card);
+  background: var(--sm-bg-elevated);
+  border: 1px solid var(--sm-border);
+  box-shadow: var(--sm-shadow-card);
   text-decoration: none;
   color: inherit;
-  transition: background-color 0.2s ease;
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .featureCard:hover {
-  background-color: var(--ifm-hover-overlay, rgba(0, 0, 0, 0.05));
+  border-color: var(--sm-border-strong);
+  transform: translateY(-2px);
   text-decoration: none;
   color: inherit;
 }
 
-.featureEmoji {
-  font-size: 4rem;
-  line-height: 1;
+.featureIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: rgba(58, 134, 255, 0.1);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }

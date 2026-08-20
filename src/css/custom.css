@@ -1,42 +1,205 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * SuperMed-inspired theme: dark navy/near-black background, blue → cyan
+ * gradient accents, Inter type, pill badges and soft-glow cards — modeled
+ * on the visual style of supermed.ro. This site is unofficial and not
+ * affiliated with or endorsed by SuperMed.
  */
 
-/* VirtuCare brand palette — a clinical blue instead of Docusaurus's default green. */
 :root {
-  --ifm-color-primary: #0f6fb0;
-  --ifm-color-primary-dark: #0d649e;
-  --ifm-color-primary-darker: #0c5f95;
-  --ifm-color-primary-darkest: #0a4e7a;
-  --ifm-color-primary-light: #117ac2;
-  --ifm-color-primary-lighter: #1280cb;
-  --ifm-color-primary-lightest: #1a91e0;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Brand palette, lifted from supermed.ro's computed styles */
+  --sm-bg: #0b0f14;
+  --sm-bg-elevated: #0e1626;
+  --sm-bg-elevated-solid: #101a2c;
+  --sm-border: rgba(76, 201, 240, 0.13);
+  --sm-border-strong: rgba(58, 134, 255, 0.28);
+  --sm-text: #e6edf3;
+  --sm-text-muted: #8b9cb8;
+  --sm-blue: #3a86ff;
+  --sm-blue-dark: #2970e8;
+  --sm-cyan: #4cc9f0;
+  --sm-cyan-light: #8be4fc;
+  --sm-gradient: linear-gradient(135deg, var(--sm-blue), var(--sm-cyan) 55%, var(--sm-cyan-light));
+  --sm-gradient-solid: linear-gradient(135deg, var(--sm-blue), #4895ef 50%, #2bbee8);
+  --sm-radius-pill: 999px;
+  --sm-radius-card: 18px;
+  --sm-radius-control: 10px;
+  --sm-shadow-card: 0 4px 24px 0 rgba(0, 0, 0, 0.4);
+  --sm-shadow-button: 0 4px 16px 0 rgba(58, 134, 255, 0.3);
 
-  /* Pagefind UI theming, see src/pages/search.js */
-  --pagefind-ui-primary: var(--ifm-color-primary);
-  --pagefind-ui-text: var(--ifm-font-color-base);
-  --pagefind-ui-background: var(--ifm-background-color);
-  --pagefind-ui-border: var(--ifm-color-emphasis-300);
-  --pagefind-ui-tag: var(--ifm-color-emphasis-200);
+  --ifm-color-primary: var(--sm-blue);
+  --ifm-color-primary-dark: #1f74ff;
+  --ifm-color-primary-darker: #126bf5;
+  --ifm-color-primary-darkest: #0f58c9;
+  --ifm-color-primary-light: #559aff;
+  --ifm-color-primary-lighter: #62a2ff;
+  --ifm-color-primary-lightest: #8bb9ff;
+
+  --ifm-font-family-base: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --ifm-code-font-size: 90%;
+  --ifm-global-radius: var(--sm-radius-control);
+  --docusaurus-highlighted-code-line-bg: rgba(58, 134, 255, 0.15);
+
+}
+
+/*
+ * pagefind-ui.css ships its own bare `:root { --pagefind-ui-*: ... }`
+ * block and is injected (as a <link>) after Docusaurus's stylesheets, so
+ * it wins the cascade over a same-specificity :root override here. Scope
+ * these to the container's id instead, which outranks a bare :root.
+ */
+#pagefind-search {
+  --pagefind-ui-primary: var(--sm-blue);
+  --pagefind-ui-text: var(--sm-text);
+  --pagefind-ui-background: var(--sm-bg-elevated);
+  --pagefind-ui-border: var(--sm-border);
+  --pagefind-ui-tag: var(--sm-bg-elevated-solid);
   --pagefind-ui-font: var(--ifm-font-family-base);
+  --pagefind-ui-border-radius: 10px;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* This site renders in dark mode only (SuperMed has no light theme), see
+   colorMode.disableSwitch in docusaurus.config.js. */
 [data-theme='dark'] {
-  --ifm-color-primary: #4db8f0;
-  --ifm-color-primary-dark: #29aaec;
-  --ifm-color-primary-darker: #17a3eb;
-  --ifm-color-primary-darkest: #0e86c6;
-  --ifm-color-primary-light: #67c6f2;
-  --ifm-color-primary-lighter: #75ccf4;
-  --ifm-color-primary-lightest: #a1dcf7;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: var(--sm-bg);
+  --ifm-background-surface-color: var(--sm-bg-elevated-solid);
+  --ifm-color-content: var(--sm-text);
+  --ifm-color-content-secondary: var(--sm-text-muted);
+  --ifm-heading-color: var(--sm-text);
+  --ifm-font-color-base: var(--sm-text);
+  --ifm-link-color: var(--sm-cyan);
+  --ifm-link-hover-color: var(--sm-cyan-light);
+  --ifm-navbar-background-color: rgba(11, 15, 20, 0.85);
+  --ifm-navbar-shadow: 0 1px 0 0 var(--sm-border);
+  --ifm-footer-background-color: var(--sm-bg-elevated);
+  --ifm-footer-color: var(--sm-text-muted);
+  --ifm-footer-link-color: var(--sm-text-muted);
+  --ifm-footer-title-color: var(--sm-text);
+  --ifm-menu-color: var(--sm-text-muted);
+  --ifm-menu-color-active: var(--sm-text);
+  --ifm-toc-border-color: var(--sm-border);
+  --ifm-table-border-color: var(--sm-border);
+  --ifm-hr-border-color: var(--sm-border);
+  --ifm-card-background-color: var(--sm-bg-elevated);
+  --ifm-code-background: rgba(58, 134, 255, 0.08);
+  --docusaurus-highlighted-code-line-bg: rgba(58, 134, 255, 0.18);
 }
+
+body {
+  background-color: var(--sm-bg);
+}
+
+/* ---- Navbar ------------------------------------------------------- */
+
+.navbar {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--sm-border);
+}
+
+.navbar__brand,
+.navbar__link {
+  font-weight: 600;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--sm-cyan);
+}
+
+.navbar__toggle {
+  color: var(--sm-text);
+}
+
+/* ---- Sidebar / menu ------------------------------------------------ */
+
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--sm-border) !important;
+}
+
+.menu__link--active,
+.menu__link--active:hover {
+  color: var(--sm-cyan);
+  background: rgba(58, 134, 255, 0.1);
+}
+
+.menu__link:hover {
+  background: rgba(76, 201, 240, 0.08);
+}
+
+.menu__list-item-collapsible--active {
+  background: transparent;
+}
+
+/* ---- Cards, admonitions, code, tables ------------------------------ */
+
+.card,
+.theme-edit-this-page,
+div[class^='cardContainer'],
+.pagination-nav__link {
+  background: var(--sm-bg-elevated);
+  border: 1px solid var(--sm-border) !important;
+  border-radius: var(--sm-radius-card) !important;
+  box-shadow: var(--sm-shadow-card);
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--sm-border-strong) !important;
+}
+
+.alert {
+  border-radius: var(--sm-radius-control);
+  border-width: 1px;
+}
+
+table {
+  display: table;
+}
+
+table thead tr {
+  background-color: var(--sm-bg-elevated);
+}
+
+table tr {
+  background-color: transparent;
+  border-top: 1px solid var(--sm-border);
+}
+
+pre,
+code {
+  border-radius: 8px;
+}
+
+div[class^='codeBlockContainer'] {
+  border: 1px solid var(--sm-border);
+  box-shadow: none;
+}
+
+/* ---- Buttons -------------------------------------------------------- */
+
+.button--secondary {
+  background: var(--sm-bg-elevated);
+  border: 1px solid var(--sm-border-strong);
+  color: var(--sm-text);
+}
+
+.button--secondary:hover {
+  border-color: var(--sm-cyan);
+  color: var(--sm-cyan-light);
+}
+
+/* ---- Search page (pagefind) ----------------------------------------- */
 
 #pagefind-search .pagefind-ui__form {
   margin-bottom: 1rem;
+}
+
+#pagefind-search .pagefind-ui__search-input,
+#pagefind-search .pagefind-ui__button {
+  border-radius: var(--sm-radius-control);
+}
+
+/* ---- Footer ----------------------------------------------------------- */
+
+.footer--dark {
+  --ifm-footer-background-color: var(--sm-bg-elevated);
+  border-top: 1px solid var(--sm-border);
 }

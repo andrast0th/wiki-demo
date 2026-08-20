@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Patient Records
 
-Every patient in VirtuCare has a chart containing demographics, visit history, clinical notes, intake responses, and attached documents.
+Every patient in SuperMed has a chart containing demographics, visit history, clinical notes, intake responses, and attached documents.
 
 ## Creating a patient record manually
 
@@ -27,11 +27,11 @@ Notes taken during a visit (see [Starting a Consultation](/video-consultations/s
 
 - Become read-only (edits require an addendum, which is timestamped and appended rather than replacing the original text).
 - Are included if the patient requests a records export.
-- Count toward the mandatory documentation your state's telehealth regulations may require to be finalized within a set number of days of the visit — VirtuCare shows a reminder banner on any draft note older than 5 days.
+- Count toward the mandatory documentation your state's telehealth regulations may require to be finalized within a set number of days of the visit — SuperMed shows a reminder banner on any draft note older than 5 days.
 
 ## Merging duplicate patients
 
-If two records are created for the same person (e.g. a returning patient who booked with a slightly different email), an **Owner** or **Provider** can merge them from **Patients → [patient] → Merge Duplicate**. Merging combines visit history, forms, and documents into a single chart and is **not reversible** — VirtuCare shows a side-by-side comparison and requires typing "MERGE" to confirm.
+If two records are created for the same person (e.g. a returning patient who booked with a slightly different email), an **Owner** or **Provider** can merge them from **Patients → [patient] → Merge Duplicate**. Merging combines visit history, forms, and documents into a single chart and is **not reversible** — SuperMed shows a side-by-side comparison and requires typing "MERGE" to confirm.
 
 ## Sharing a chart with another provider
 

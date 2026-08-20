@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Setting Up Your Clinic Profile
 
-Your clinic profile controls what patients see when they receive appointment confirmations, visit reminder links, and invoices from VirtuCare.
+Your clinic profile controls what patients see when they receive appointment confirmations, visit reminder links, and invoices from SuperMed.
 
 ## Basic information
 
@@ -21,10 +21,10 @@ Under **Settings → Clinic Profile → Branding**, you can upload:
 
 - A clinic logo (SVG or PNG, transparent background recommended, max 2 MB) shown on the patient booking page and in the video waiting room.
 - A primary brand color, used for buttons on the patient-facing booking page.
-- A custom "from" name for email notifications (e.g. "Riverside Family Health" instead of the default "VirtuCare Notifications").
+- A custom "from" name for email notifications (e.g. "Riverside Family Health" instead of the default "SuperMed Notifications").
 
 :::info
-Custom email sending domains (so reminders come from `@riversidefamilyhealth.com` instead of `@virtucare.example`) require the **Practice** plan or higher and DNS verification. See [Custom notification domains](/faq/technical-faq#custom-domains).
+Custom email sending domains (so reminders come from `@riversidefamilyhealth.com` instead of `@supermed.example`) require the **Practice** plan or higher and DNS verification. See [Custom notification domains](/faq/technical-faq#custom-domains).
 :::
 
 ## Business hours

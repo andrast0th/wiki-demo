@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Video & Audio Device Setup
 
-VirtuCare video visits run directly in the browser (Chrome, Edge, Safari 16+, or Firefox) using WebRTC — no separate app install is required for providers or patients.
+SuperMed video visits run directly in the browser (Chrome, Edge, Safari 16+, or Firefox) using WebRTC — no separate app install is required for providers or patients.
 
 ## Recommended equipment
 
@@ -17,7 +17,7 @@ VirtuCare video visits run directly in the browser (Chrome, Edge, Safari 16+, or
 
 ## Running the device check
 
-Before your first consultation, run VirtuCare's built-in device check:
+Before your first consultation, run SuperMed's built-in device check:
 
 1. From the dashboard, go to **Settings → Video → Device Check**.
 2. Grant camera and microphone permissions when your browser prompts you. If you accidentally deny permission, see [Camera/microphone permission was denied](/faq/technical-faq#permission-denied).
@@ -27,7 +27,7 @@ Dr. Osei runs the check from her exam room laptop and gets a warning that her up
 
 ## Choosing default devices
 
-Set default camera, microphone, and speaker under **Settings → Video → Default Devices**. This is especially useful if you use different equipment at different locations (e.g. a laptop mic at home, a USB headset at the office) — VirtuCare will remember the last device you selected per browser profile, but setting explicit defaults avoids accidentally starting a visit on the wrong microphone.
+Set default camera, microphone, and speaker under **Settings → Video → Default Devices**. This is especially useful if you use different equipment at different locations (e.g. a laptop mic at home, a USB headset at the office) — SuperMed will remember the last device you selected per browser profile, but setting explicit defaults avoids accidentally starting a visit on the wrong microphone.
 
 ## Virtual backgrounds and blur
 
