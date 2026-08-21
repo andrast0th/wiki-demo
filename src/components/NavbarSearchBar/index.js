@@ -29,7 +29,20 @@ function loadPagefind(baseUrl) {
   return pagefindPromise;
 }
 
-export default function NavbarSearchBar() {
+export default function NavbarSearchBar({mobile}) {
+  // Docusaurus renders every navbar item a second time inside the mobile
+  // hamburger sidebar (a <ul class="menu__list">). This component's root
+  // is a plain positioned <div> (needed for the results dropdown), which
+  // isn't valid <ul> content and broke the sidebar's layout — including
+  // hiding the docs navigation panel entirely. The item is already
+  // reachable in the always-visible top bar (position: 'right' keeps it
+  // outside the collapsing part of the navbar even on narrow viewports),
+  // so skip the second, broken copy — the same pattern Docusaurus's own
+  // built-in SearchNavbarItem uses.
+  if (mobile) {
+    return null;
+  }
+
   const {i18n, siteConfig} = useDocusaurusContext();
   const history = useHistory();
   const rootBaseUrl = getRootBaseUrl({

@@ -89,7 +89,13 @@ body {
 /* ---- Navbar ------------------------------------------------------- */
 
 .navbar {
-  backdrop-filter: blur(10px);
+  /* No backdrop-filter here: it (like transform/filter/perspective/
+     will-change) makes an element the *containing block* for any
+     position:fixed descendant. .navbar-sidebar (the mobile hamburger
+     drawer) is a real DOM child of .navbar and is position:fixed with
+     top:0;bottom:0 to span the full viewport height — with the filter
+     here, it instead sized itself against .navbar's own ~60px height,
+     squashing the whole mobile menu down to a sliver. */
   border-bottom: 1px solid var(--sm-border);
 }
 
